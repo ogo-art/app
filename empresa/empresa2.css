@@ -1,0 +1,277 @@
+@font-face {
+    font-family: 'Lori Bold';
+    src: url('fonts/LoriBold.woff2') format('woff2'),
+        url('fonts/LoriBold.woff') format('woff'),
+        url('fonts/LoriBold.ttf') format('truetype'),
+        url('fonts/LoriBold.svg') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lori Medium';
+    src: url('../fonts/LoriMedium.woff2') format('woff2'),
+        url('../fonts/LoriMedium.woff') format('woff'),
+        url('../fonts/LoriMedium.ttf') format('truetype'),
+        url('../fonts/LoriMedium.svg') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Apila la imagen y el botón en columna */
+    align-items: center; /* Centra horizontalmente */
+    font-family: 'Lori Medium';
+}
+
+body img {
+    width: 100px;
+    margin-top: 70px;
+}
+
+h1{
+    font-size: 1.2rem;
+    margin: 40px 0px -8px 0px;
+    padding: 0px 420px 0px 0px;
+}
+
+.nom {
+    width: 500px; /* Puedes ajustar el tamaño según lo necesites */
+    padding: 10px;
+    margin: 10px 0; /* Espacio entre los recuadros */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+h2{
+    font-size: 1.2rem;
+    margin: 10px 0px -8px 0px;
+    padding: 0px 445px 0px 0px;
+}
+
+.usuari {
+    width: 500px; /* Puedes ajustar el tamaño según lo necesites */
+    padding: 10px;
+    margin: 10px 0; /* Espacio entre los recuadros */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+h3{
+    font-size: 1.2rem;
+    margin: 10px 0px -8px 0px;
+    padding: 0px 425px 0px 0px;
+}
+
+.data {
+    width: 500px; /* Puedes ajustar el tamaño según lo necesites */
+    padding: 10px;
+    margin: 10px 0; /* Espacio entre los recuadros */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+h4{
+    font-size: 1.2rem;
+    margin: 10px 0px -8px 0px;
+    padding: 0px 448px 0px 0px;
+}
+
+.contra {
+    width: 500px; /* Puedes ajustar el tamaño según lo necesites */
+    padding: 10px;
+    margin: 10px 0; /* Espacio entre los recuadros */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.checkbox-container {
+    margin-right: 410px;
+    margin-top: -20px;
+}
+
+/* SUBIR FOTO */
+
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.profile-pic {
+    width: 520px;
+    height: 170px;
+    background-color: rgb(222, 222, 222);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: 0px;
+}
+
+#file-input {
+    display: none;
+}
+
+.upload-btn {
+    margin-top: 10px;
+    margin-right: 430px;
+    padding: 10px 15px;
+    background-color: #5BC0BE;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.upload-btn:hover {
+    opacity: 0.5;
+}
+
+/* SUBIRFOTO */
+
+h5{
+    font-size: 1.2rem;
+    padding-right: 280px;
+    margin-top: 20px;
+    margin-bottom: -20px;
+}
+
+.inicia {
+    width: 250px;
+    height: 70px;
+    border-radius: 10px;
+    background: #5BC0BE; /* Para que el botón sea visible */
+    box-shadow: 2px 2px 5px black; /* Sombras para mejorar la visibilidad */
+    margin-top: 30px; /* Espacio de 300px entre la imagen y el botón */
+    text-decoration: none;
+
+    /* El text */
+    font-size: 2rem;
+    line-height: 4.5rem;
+    text-align: center;
+    color: white;
+}
+
+.inicia:hover {
+    opacity: 50%;
+    box-shadow: 0px 0px 0px transparent;
+}
+
+
+@media screen and (max-width: 480px){
+    /*aqui va el disseny smartphone*/
+    img{
+        width: 80px;
+        margin-top: 70px;
+    }
+
+    h1{
+        font-size: 1.1rem;
+        margin: 40px 0px -8px 0px;
+        padding: 0px 228px 0px 0px;
+    }
+
+    .nom {
+        width: 300px; /* Puedes ajustar el tamaño según lo necesites */
+    }
+
+    h2{
+        font-size: 1.1rem;
+        margin: 10px 0px -8px 0px;
+        padding: 0px 250px 0px 0px;
+    }
+
+    .usuari {
+        width: 300px; /* Puedes ajustar el tamaño según lo necesites */
+    }
+
+    h3{
+        font-size: 1.1rem;
+        margin: 10px 0px -8px 0px;
+        padding: 0px 230px 0px 0px;
+    }
+
+    .data {
+        width: 300px; /* Puedes ajustar el tamaño según lo necesites */
+    }
+
+    .checkbox-container {
+        margin-right: 210px;
+        margin-top: -20px;
+    }
+
+    h4{
+        font-size: 1.1rem;
+        margin: 10px 0px -8px 0px;
+        padding: 0px 250px 0px 0px;
+    }
+
+    .contra {
+        width: 300px; /* Puedes ajustar el tamaño según lo necesites */
+    }
+
+
+    /* SUBIR FOTO */
+
+
+.profile-container {
+    margin-top: 15px;
+}
+
+.profile-pic {
+    width: 320px;
+    height: 140px;
+}
+
+.upload-btn {
+    margin-top: 10px;
+    margin-right: 232px;
+    padding: 10px 15px;
+    background-color: #5BC0BE;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.upload-btn:hover {
+    opacity: 0.5;
+}
+
+/* SUBIRFOTO */
+
+
+    .inicia {
+        width: 260px;
+        height: 60px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px black; /* Sombras para mejorar la visibilidad */
+        margin-top: 20px; /* Espacio de 300px entre la imagen y el botón */
+
+        /* E text */
+        font-size: 1.8rem;
+        line-height: 3.8rem;
+        text-align: center;
+    }
+
+    h5{
+        font-size: 1.2rem;
+        padding-right: 80px;
+        margin-bottom: 1px;
+    }
+}

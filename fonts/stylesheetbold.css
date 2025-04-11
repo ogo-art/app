@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Lori Bold';
+    src: url('LorimerNo2TrialCondensedBold.woff2') format('woff2'),
+        url('LorimerNo2TrialCondensedBold.woff') format('woff'),
+        url('LorimerNo2TrialCondensedBold.ttf') format('truetype'),
+        url('LorimerNo2TrialCondensedBold.svg#LorimerNo2TrialCondensedBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

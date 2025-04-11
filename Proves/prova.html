@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider Automático</title>
+    <link rel="stylesheet" href="prova.css">
+</head>
+<body>
+    <div class="slider-container">
+        <div class="slider" id="slider">
+            <div class="slide"><img src="https://via.placeholder.com/600x300/FF5733/FFFFFF?text=Slide+1" alt="Slide 1"></div>
+            <div class="slide"><img src="https://via.placeholder.com/600x300/33FF57/FFFFFF?text=Slide 2" alt="Slide 2"></div>
+            <div class="slide"><img src="https://via.placeholder.com/600x300/3357FF/FFFFFF?text=Slide 3" alt="Slide 3"></div>
+        </div>
+    </div>
+
+    <script>
+        let index = 0;
+        const slides = document.querySelectorAll('.slide');
+        const slider = document.getElementById('slider');
+        let touchStartX = 0;
+
+        function nextSlide() {
+            index = (index + 1) % slides.length;
+            updateSlider();
+        }
+
+        function prevSlide() {
+            index = (index - 1 + slides.length) % slides.length;
+            updateSlider();
+        }
+
+        function updateSlider() {
+            slider.style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        let autoSlide = setInterval(nextSlide, 3000);
+
+        slider.addEventListener('touchstart', (e) => {
+            touchStartX = e.touches[0].clientX;
+        });
+
+        slider.addEventListener('touchend', (e) => {
+            let touchEndX = e.changedTouches[0].clientX;
+            if (touchStartX - touchEndX > 50) {
+                nextSlide();
+            } else if (touchStartX - touchEndX < -50) {
+                prevSlide();
+            }
+        });
+    </script>
+</body>
+</html>

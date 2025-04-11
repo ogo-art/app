@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OGO</title>
+    <link rel="stylesheet" href="artista2.css">
+</head>
+<body>
+    <img src="../img/logolila.png" alt="">
+
+    <h2>Nom i cognom</h2>
+    <!-- Primer recuadro de texto -->
+    <input type="text" placeholder="Exemple: Javier Garcia" class="nom">
+
+    <h3>Nom d'usuari</h3>
+    <!-- Primer recuadro de texto -->
+    <input type="text" placeholder="Exemple: javi_garcia" class="usuari">
+
+    <h4>Data de naixement</h4>
+    <!-- Primer recuadro de texto -->
+    <input type="text" placeholder="Exemple: 30/10/2000" class="data">
+
+    <h3>Contrasenya</h3>
+    <!-- Segundo recuadro de texto -->
+    <input type="password" placeholder="Contrasenya" class="contra" id="password">
+    <br>
+    <div class="checkbox-container">
+        <input type="checkbox" id="togglePassword"> 
+        <label for="togglePassword">Mostrar contrasenya</label>
+    </div>
+
+
+    <div class="contenedor">
+        <div class="avatar">
+            <img src="../img/logonaranja.png" alt="">
+         </div>
+    
+         <div class="avatar">
+            <img src="../img/logopink.png" alt="">
+         </div>
+    
+         <div class="avatar">
+            <img src="../img/logoverd.png" alt="">
+         </div>
+
+         <div class="avatar">
+            <img src="../img/logoblau.png" alt="">
+         </div>
+    </div>
+
+
+    <a href="../interface/home.html" class="inicia">REGISTRAR</a>
+
+    <script>
+        document.getElementById('togglePassword').addEventListener('change', function() {
+            let passwordField = document.getElementById('password');
+            passwordField.type = this.checked ? 'text' : 'password';
+        });
+    </script>
+
+<script>
+    const avatars = document.querySelectorAll(".avatar");
+
+    avatars.forEach(avatar => {
+        avatar.addEventListener("click", function() {
+            // Remueve la clase "active" de todos los avatares
+            avatars.forEach(av => av.classList.remove("active"));
+            // Agrega la clase "active" solo al que fue clicado
+            this.classList.add("active");
+        });
+    });
+</script>
+
+    
+</body>
+</html>

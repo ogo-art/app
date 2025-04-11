@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Lori Medium';
+    src: url('LorimerNo2TrialCondensedMedium.woff2') format('woff2'),
+        url('LorimerNo2TrialCondensedMedium.woff') format('woff'),
+        url('LorimerNo2TrialCondensedMedium.ttf') format('truetype'),
+        url('LorimerNo2TrialCondensedMedium.svg#LorimerNo2TrialCondensedMedium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,0 +1,519 @@
+
+@font-face {
+    font-family: 'Lori Bold';
+    src: url('../fonts/LoriBold.woff2') format('woff2'),
+        url('../fonts/LoriBold.woff') format('woff'),
+        url('../fonts/LoriBold.ttf') format('truetype'),
+        url('../fonts/LoriBold.svg') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lori Medium';
+    src: url('../fonts/LoriMedium.woff2') format('woff2'),
+        url('../fonts/LoriMedium.woff') format('woff'),
+        url('../fonts/LoriMedium.ttf') format('truetype'),
+        url('../fonts/LoriMedium.svg') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: transparent;
+    overflow-x: hidden;
+}
+
+.buscador {
+    background: transparent;
+    width: 100%;
+    max-width: 960px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.buscar{
+    width: 90%;
+    height: 30px;
+    box-sizing: border-box;
+}
+
+.enter{
+    background: #5BC0BE;
+    width: 9.9%;
+    height: 30px;
+    float: right;
+    border-radius: 3px;
+}
+
+.enter h1 {
+    background: transparent;
+    font-size: 1.4rem;
+    font-family: 'Lori Medium';
+    text-align: center;
+    color: white;
+    bottom: 18px;
+}
+
+h1 {
+    background: transparent;
+    width: 100%;
+    max-width: 960px;
+    font-size: 1.rem;
+    font-family: 'Lori Bold';
+    color: black;
+    margin-top: 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.expos {
+    width: 100%;
+    max-width: 960px;
+    height: 350px;
+    background: blue;
+    border-radius: 30px;
+    margin:  0 auto;
+    background-image: url(../fotosart/expo1.jpeg);
+    background-size: 960px;  
+    background-repeat: no-repeat;
+    background-position: 0px -400px;
+}
+
+.etiqueta{
+    background: white;
+    width: 150px;
+    height: 35px;
+    left: 80%;
+    top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px black, 0 0 20px black;
+}
+
+.etiqueta h3{
+    background: transparent;
+    color: #5BC0BE;
+    font-family: 'Lori Medium';
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.expos h1{
+    color: white;
+    font-family: 'Lori Bold';
+    font-size: 3rem;
+    top: 180px;
+    padding: 0px 0px 0px 20px;
+    text-shadow: 0 0 5px black, 0 0 10px black, 0 0 10px black;
+}
+
+.expos h2{
+    background: transparent;
+    color: white;
+    font-family: 'Lori Medium';
+    font-size: 1.5rem;
+    top: 180px;
+    padding: 0px 0px 0px 20px;
+    text-shadow: 0 0 5px black, 0 0 10px black, 0 0 10px black;
+}
+
+h2 {
+    max-width: 960px;
+    font-size: 2rem;
+    font-family: 'Lori Bold';
+    color: black;
+    margin-top: 15px;
+    margin: 0 auto;
+}
+
+.canvi {
+    max-width: 960px;
+    font-family: 'Lori Bold';
+    color: black;
+    padding-top: 20px;
+    margin: 0 auto;
+    background-image: url(../img/desplegar.png);
+    background-size: 15px;  
+    background-repeat: no-repeat;
+    background-position: 10px 32px;
+    text-indent: 30px;
+    font-size: 1.6rem;
+}
+
+.container {
+    background: transparent;
+    width: 100%;
+    max-width: 960px;
+    height: fit-content;
+    margin-top: 10px;
+    padding-bottom: 90px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+.expo {
+    background: grey;
+    width: 460px;
+    height: 460px;
+    float: left;
+    margin: 10px 10px 60px 10px;
+}
+
+.guardar {
+    background: transparent;
+    width: 40px;
+    height: 40px;
+    left: 410px;
+    top: 10px;
+    background-image: url(../img/guardar.png);
+    background-size: contain;  
+    background-repeat: no-repeat;
+    background-position: 7px 0px;
+}
+
+.peu {
+    background: transparent;
+    width: 460px;
+    height: 60px;
+    top: 420px;
+}
+
+.peu h1 {
+    background: transparent;
+    font-size: 1.8rem;
+    font-family: 'Lori Bold';
+    width: 70%;
+    margin: 0;
+}
+
+.peu h2 {
+    background: transparent;
+    font-size: 1.2rem;
+    font-family: 'Lori Medium';
+    margin: 0;
+    width: 70%;
+}
+
+.seguir {
+    background: #5BC0BE;
+    width: 30%;
+    height: 40px;
+    float: right;
+    bottom: 55px;
+    border-radius: 10px;
+}
+
+.seguir h1 {
+    background: transparent;
+    font-size: 1.5rem;
+    font-family: 'Lori Medium';
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    line-height: 2.4rem;
+    color: white;
+}
+
+.nave{
+    background: #591662;
+    width: 100%;
+    max-width: 960px;
+    height: 80px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: fixed;
+    justify-content: center;
+    display: flex;
+}
+
+.home {
+    opacity: 0.5;
+    background: transparent;
+    width: 40px;
+    height:40px;
+    margin: 20px 5%;
+    float: left;
+    background-image: url(../img/home.png);
+    background-size: contain;  
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+}
+
+.home:hover {
+    opacity: 1;
+}
+
+.exposi {
+    opacity: 1;
+    background: transparent;
+    width: 40px;
+    height: 40px;
+    margin: 20px 5%;
+    float: left;
+    background-image: url(../img/expo.png);
+    background-size: contain;  
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+}
+
+.subir {
+    opacity: 0.5;
+    background: transparent;
+    width: 70px;
+    height:70px;
+    margin: 5px 50px;
+    float: left;
+    background-image: url(../img/subir.png);
+    background-size: contain;  
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+}
+
+.subir:hover {
+    opacity: 1;
+}
+
+.subasta {
+    opacity: 0.5;
+    background: transparent;
+    width: 40px;
+    height:40px;
+    margin: 20px 5%;
+    float: left;
+    background-image: url(../img/subasta.png);
+    background-size: contain;  
+    background-repeat: no-repeat;
+    background-position: 3px 0px;
+}
+
+.subasta:hover {
+    opacity: 1;
+}
+
+.perfil {
+    opacity: 0.5;
+    background: transparent;
+    width: 40px;
+    height:40px;
+    margin: 20px 5%;
+    float: left;
+    background-image: url(../img/perfil.png);
+    background-size: contain;  
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+}
+
+.perfil:hover {
+    opacity: 1;
+}
+
+
+@media screen and (max-width: 440px){
+    /*aqui va el disseny smartphone*/
+
+    .buscador {
+        max-width: 400px;
+        height: 20px;
+    }
+    
+    .buscar{
+        width: 90%;
+        height: 25px;
+        box-sizing: border-box;
+    }
+    
+    .enter{
+        width: 10%;
+        height: 25px;
+    }
+    
+    .enter h1 {
+        font-size: 1.1rem;
+        bottom: 18px;
+    }
+    
+    h1 {
+        max-width: 400px;
+        font-size: 1.4rem;
+        margin-top: 20px;
+    }
+
+    .expos {
+        width: 100%;
+        max-width: 400px;
+        height: 200px;
+        border-radius: 20px;
+        background-size: 450px;  
+        background-repeat: no-repeat;
+        background-position: 0px -160px;
+    }
+    
+    .etiqueta{
+        background: white;
+        width: 90px;
+        height: 25px;
+        left: 73%;
+        top: 15px;
+        border-radius: 5px; 
+    }
+    
+    .etiqueta h3{
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+    
+    .expos h1{
+        color: white;
+        font-size: 1.8rem;
+        top: 90px;
+        padding: 0px 0px 0px 15px;
+    }
+    
+    .expos h2{
+        font-size: 1.1rem;
+        top: 80px;
+        padding: 0px 0px 0px 15px;
+    }
+
+    h2 {
+        max-width: 420px;
+        font-size: 1.4rem;
+        margin-top: 0px;
+    }
+    
+    .canvi {
+        width: 100%;
+        height: 1.4rem;
+        margin: 10px 5px;
+        top: 0px;
+        font-size: 1.4rem;
+        text-indent: 30px;
+        background-image: url(../img/desplegar.png);
+        background-size: 15px;  
+        background-repeat: no-repeat;
+        background-position: 0px 12px;
+        line-height: 1.6rem;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 440px;
+        margin-top: 5px;
+        overflow: auto;
+        padding-bottom: 55px;
+    }
+    
+    .expo {
+        background: grey;
+        width: 440px;
+        height: 440px;
+        margin: 0px 0px 65px 0px;
+    }
+    
+    .guardar {
+        width: 30px;
+        height: 30px;
+        left: 370px;
+        top: 10px;
+    }
+    
+    .peu {
+        width: 400px;
+        height: 60px;
+        top: 410px;
+        margin: 0 auto;
+    }
+    
+    .peu h1 {
+        font-size: 1.5rem;
+    }
+    
+    .peu h2 {
+        font-size: 1.1rem;
+    }
+    
+    .seguir {
+        width: 28%;
+        height: 35px;
+        bottom: 45px;
+        border-radius: 5px;
+        right: 20px;
+    }
+    
+    .seguir h1 {
+        font-size: 1.4rem;
+        font-family: 'Lori Medium';
+        text-align: center;
+        margin: 0;
+        width: 100%;
+        line-height: 2.2rem;
+        color: white;
+    }
+
+    .nave{
+        background: #591662;
+        width: 100%;
+        height: 55px;
+        position: fixed;
+        justify-content: center;
+        display: block;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        transform: translateX(0%); 
+
+    }
+    
+    .home {
+        width: 30px;
+        height: 30px;
+        margin: 10px 30px;
+        background-image: url(../img/home.png);
+        background-size: contain;  
+        background-repeat: no-repeat;
+        background-position: 0px 0px;
+    }
+    
+    
+    .exposi {
+        width: 30px;
+        height: 30px;
+        margin: 10px 30px;
+    }
+    
+    
+    .subir {
+        width: 40px;
+        height: 40px;
+        margin: 5px 25px;
+    }
+    
+    
+    .subasta {
+        width: 30px;
+        height: 30px;
+        margin: 10px 30px;
+    }
+    
+    
+    .perfil {
+        width: 30px;
+        height: 30px;
+        margin: 10px 30px;
+    }
+    
+}

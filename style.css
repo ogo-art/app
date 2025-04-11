@@ -1,0 +1,43 @@
+body {
+    background-color: #591662;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Evita el scroll cuando la imagen crece */
+}
+
+img {
+    width: 300px;
+    opacity: 0; /* Inicialmente invisible */
+    animation: fadeIn 1s ease-in-out forwards, expand 3s ease-in-out 1s forwards;
+}
+
+/* Animación de fusión (fade-in) */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Animación de expansión extrema */
+@keyframes expand {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(10); /* 1000% del tamaño original */
+    }
+}
+
+
+@media screen and (max-width: 480px){
+    /*aqui va el disseny smartphone*/
+    img{
+        width: 130px;
+    }
+}

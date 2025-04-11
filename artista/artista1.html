@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OGO</title>
+    <link rel="stylesheet" href="artista1.css">
+</head>
+<body>
+    <img src="../img/logolila.png" alt="">
+    
+    <h2>Correu/Nom d'usuari</h2>
+    <!-- Primer recuadro de texto -->
+    <input type="text" placeholder="Correu o nom d'usuari" class="nom">
+
+    <h3>Contrasenya</h3>
+    <!-- Segundo recuadro de texto -->
+    <input type="password" placeholder="Contrasenya" class="contra" id="password">
+    <br>
+    <div class="checkbox-container">
+        <input type="checkbox" id="togglePassword"> 
+        <label for="togglePassword">Mostrar contrasenya</label>
+    </div>
+
+    <script>
+        document.getElementById('togglePassword').addEventListener('change', function() {
+            let passwordField = document.getElementById('password');
+            passwordField.type = this.checked ? 'text' : 'password';
+        });
+    </script>
+
+    <a href="../interface/home.html" class="inicia">INICIA SESSIÓ</a>
+    <a href="artista2.html" class="registrar">No tens compte? Registra't i descobreix.</a>
+
+</body>
+</html>
+
+
+
+       

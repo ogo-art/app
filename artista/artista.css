@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'Lori Bold';
+    src: url('fonts/LoriBold.woff2') format('woff2'),
+        url('fonts/LoriBold.woff') format('woff'),
+        url('fonts/LoriBold.ttf') format('truetype'),
+        url('fonts/LoriBold.svg') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lori Medium';
+    src: url('../fonts/LoriMedium.woff2') format('woff2'),
+        url('../fonts/LoriMedium.woff') format('woff'),
+        url('../fonts/LoriMedium.ttf') format('truetype'),
+        url('../fonts/LoriMedium.svg') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Apila la imagen y el botón en columna */
+    align-items: center; /* Centra horizontalmente */
+    font-family: 'Lori Medium';
+}
+
+img {
+    width: 150px;
+    margin-top: 100px; /* Ajusta la distancia desde arriba */
+}
+
+.boto1 {
+    width: 400px;
+    height: 100px;
+    border-radius: 20px;
+    background: #5BC0BE; /* Para que el botón sea visible */
+    box-shadow: 2px 2px 5px black; /* Sombras para mejorar la visibilidad */
+    margin-top: 100px; /* Espacio de 300px entre la imagen y el botón */
+    text-decoration: none;
+
+    /* El text */
+    font-size: 2.5rem;
+    line-height: 6.5rem;
+    text-align: center;
+    color: white;
+}
+
+.boto1:hover {
+    opacity: 50%;
+    box-shadow: 0px 0px 0px transparent;
+}
+
+.boto2 {
+    width: 400px;
+    height: 100px;
+    border-radius: 20px;
+    background: white; /* Para que el botón sea visible */
+    box-shadow: 2px 2px 5px black; /* Sombras para mejorar la visibilidad */
+    margin-top: 20px; /* Espacio de 300px entre la imagen y el botón */
+    text-decoration: none;
+
+    /* E text */
+    font-size: 2.5rem;
+    line-height: 6.5rem;
+    text-align: center;
+    color: #5BC0BE;
+}
+
+.boto2:hover {
+    opacity: 50%;
+    box-shadow: 0px 0px 0px transparent;
+}
+
+
+h1{
+    font-size: 1.2rem;
+    margin: 15px 0px 0px 0px;
+    color: #591662;
+    padding: 0px 170px 0px 0px;
+}
+
+
+@media screen and (max-width: 480px){
+    /*aqui va el disseny smartphone*/
+    img{
+        width: 110px;
+        margin-top: 110px;
+    }
+
+    .boto1 {
+        width: 320px;
+        height: 80px;
+        border-radius: 15px;
+        box-shadow: 2px 2px 5px black; /* Sombras para mejorar la visibilidad */
+        margin-top: 100px; /* Espacio de 300px entre la imagen y el botón */
+
+        /* E text */
+        font-size: 2.2rem;
+        line-height: 5rem;
+        text-align: center;
+    }
+
+    .boto2 {
+        width: 320px;
+        height: 80px;
+        border-radius: 15px;
+        box-shadow: 2px 2px 5px black; /* Sombras para mejorar la visibilidad */
+        margin-top: 20px; /* Espacio de 300px entre la imagen y el botón */
+        
+        /* E text */
+        font-size: 2.2rem;
+        line-height: 5rem;
+        text-align: center;
+    }
+
+    h1{
+        font-size: 1rem;
+        margin: 15px 0px 0px 0px;
+        padding: 0px 130px 0px 0px;
+    }
+}
+
