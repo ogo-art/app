@@ -143,39 +143,42 @@ h2 {
     color: black;
     padding-top: 20px;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: 10px 32px;
+    text-indent: 30px;
     font-size: 1.6rem;
     cursor: pointer;
+    position: relative;
 }
 
 .imagen-girar {
+    position: absolute;
+    top: 32px;
+    left: 10px;
     width: 15px;
     height: 15px;
     background-image: url(../img/desplegar.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    margin-right: 10px;
-    transition: transform 0.4s ease;
+    transition: transform 0.5s ease;
+    pointer-events: none; /* para que no bloquee el clic */
 }
 
-/* Gira la imagen */
-.girar .imagen-girar {
+/* Aplica solo la rotación a la imagen */
+.canvi.girar .imagen-girar {
     transform: rotate(60deg);
 }
 
-/* Texto oculto por defecto */
 .siguiendo {
-    max-width: 960px;
-    margin: 0 auto;
-    font-family: 'Lori Medium';
+    font-family: 'Lori Bold';
+    color: black;
     font-size: 1.4rem;
     padding-top: 10px;
-    color: #5BC0BE;
+    margin-left: 30px; /* alineado con el texto "Descobreix" */
 }
 
-/* Clase para ocultar */
 .oculto {
     display: none;
 }
@@ -522,7 +525,6 @@ h2 {
         color: black;
         padding-top: 20px;
         margin: 0 auto;
-        background-image: url(../img/desplegar.png);
         background-size: 15px;
         background-repeat: no-repeat;
         background-position: 10px 32px;

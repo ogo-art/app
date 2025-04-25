@@ -136,7 +136,7 @@ h3 {
   height:40px;
   margin: 20px 5%;
   float: left;
-  background-image: url(../img/home.png);
+  background-image: url(../../img/home.png);
   background-size: contain;  
   background-repeat: no-repeat;
   background-position: 0px 0px;
@@ -149,7 +149,7 @@ h3 {
   height: 40px;
   margin: 20px 5%;
   float: left;
-  background-image: url(../img/expo.png);
+  background-image: url(../../img/expo.png);
   background-size: contain;  
   background-repeat: no-repeat;
   background-position: 0px 0px;
@@ -166,7 +166,7 @@ h3 {
   height:70px;
   margin: 5px 50px;
   float: left;
-  background-image: url(../img/subir.png);
+  background-image: url(../../img/subir.png);
   background-size: contain;  
   background-repeat: no-repeat;
   background-position: 0px 0px;
@@ -183,7 +183,7 @@ h3 {
   height:40px;
   margin: 20px 5%;
   float: left;
-  background-image: url(../img/subasta.png);
+  background-image: url(../../img/subasta.png);
   background-size: contain;  
   background-repeat: no-repeat;
   background-position: 3px 0px;
@@ -200,7 +200,7 @@ h3 {
   height:40px;
   margin: 20px 5%;
   float: left;
-  background-image: url(../img/perfil.png);
+  background-image: url(../../img/perfil.png);
   background-size: contain;  
   background-repeat: no-repeat;
   background-position: 0px 0px;

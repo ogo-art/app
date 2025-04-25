@@ -145,7 +145,7 @@ h2 {
 }
 
 .home {
-    opacity: 0.5;
+    opacity: 1;
     background: transparent;
     width: 40px;
     height:40px;
@@ -157,12 +157,8 @@ h2 {
     background-position: 0px 0px;
 }
 
-.home:hover {
-    opacity: 1;
-}
-
 .exposi {
-    opacity: 1;
+    opacity: 0.5;
     background: transparent;
     width: 40px;
     height: 40px;
@@ -172,6 +168,10 @@ h2 {
     background-size: contain;  
     background-repeat: no-repeat;
     background-position: 0px 0px;
+}
+
+.exposi:hover {
+    opacity: 1;
 }
 
 .subir {
@@ -294,8 +294,6 @@ h2 {
         margin-top: 10px;
     }
     
- 
-
     .container {
         width: 100%;
         max-width: 420px;
@@ -305,7 +303,6 @@ h2 {
     }
 
     /* NAVEGACIÓ*/
-
     .nave{
         background: #591662;
         width: 100%;
@@ -320,25 +317,25 @@ h2 {
         height:40px;
         margin: 14px 20px 0px 20px;
     }
-    
+
     .exposi {
         width: 40px;
         height: 40px;
         margin: 14px 20px 0px 20px;
     }
-    
+
     .subir {
         width: 55px;
         height:55px;
         margin: 6px 20px 0px 20px;
     }
-    
+
     .subasta {
         width: 40px;
         height:40px;
         margin: 14px 20px 0px 20px;
     }
-    
+
     .perfil {
         width: 40px;
         height:40px;
