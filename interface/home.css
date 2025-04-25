@@ -143,13 +143,45 @@ h2 {
     color: black;
     padding-top: 20px;
     margin: 0 auto;
-    background-image: url(../img/desplegar.png);
-    background-size: 15px;  
-    background-repeat: no-repeat;
-    background-position: 10px 32px;
-    text-indent: 30px;
+    display: flex;
+    align-items: center;
     font-size: 1.6rem;
+    cursor: pointer;
 }
+
+.imagen-girar {
+    width: 15px;
+    height: 15px;
+    background-image: url(../img/desplegar.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 10px;
+    transition: transform 0.4s ease;
+}
+
+/* Gira la imagen */
+.girar .imagen-girar {
+    transform: rotate(60deg);
+}
+
+/* Texto oculto por defecto */
+.siguiendo {
+    max-width: 960px;
+    margin: 0 auto;
+    font-family: 'Lori Medium';
+    font-size: 1.4rem;
+    padding-top: 10px;
+    color: #5BC0BE;
+}
+
+/* Clase para ocultar */
+.oculto {
+    display: none;
+}
+
+
+
 
 .container {
     background: transparent;
@@ -219,7 +251,7 @@ h2 {
     height: 40px;
     left: 410px;
     top: 10px;
-    background-image: url(../img/guardar2.png);
+    background-image: url(../img/guardar.png);
     background-size: contain;  
     background-repeat: no-repeat;
     background-position: 7px 0px;
@@ -363,56 +395,6 @@ h2 {
 }
 
 @media screen and (max-width: 440px) {
-
-    /* Ajustes para la barra de navegación */
-    .nave {
-        position: fixed;
-        width: 100%;
-        height: 80px;
-        bottom: 0;
-        left: 0;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        background: #591662;
-        padding: 0 10px;
-        z-index: 100;
-    }
-
-    /* Ajuste de los iconos dentro de la nave */
-    .home, .exposi, .subir, .subasta, .perfil {
-        width: 40px;
-        height: 40px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        opacity: 0.5;
-    }
-
-    .home {
-        background-image: url(../img/home.png);
-    }
-
-    .exposi {
-        background-image: url(../img/expo.png);
-    }
-
-    .subir {
-        background-image: url(../img/subir.png);
-    }
-
-    .subasta {
-        background-image: url(../img/subasta.png);
-    }
-
-    .perfil {
-        background-image: url(../img/perfil.png);
-    }
-
-    /* Hover para los iconos */
-    .home:hover, .exposi:hover, .subir:hover, .subasta:hover, .perfil:hover {
-        opacity: 1;
-    }
 
     /* Ajuste para la etiqueta */
     .etiqueta {
@@ -596,6 +578,46 @@ h2 {
 
     /* Ajuste adicional para la etiqueta y el botón de seguir */
     .seguir {
-        left: 10px; /* Para que esté más a la izquierda */
+        left: 10px; /* Para que esté alineado correctamente */
+    }
+
+    /* NAVEGACIÓ*/
+    .nave{
+        background: #591662;
+        width: 100%;
+        height: 65px;
+        position: fixed;
+        justify-content: center;
+        display: flex;
+    }
+
+    .home {
+        width: 40px;
+        height:40px;
+        margin: 14px 20px 0px 20px;
+    }
+    
+    .exposi {
+        width: 40px;
+        height: 40px;
+        margin: 14px 20px 0px 20px;
+    }
+    
+    .subir {
+        width: 55px;
+        height:55px;
+        margin: 6px 20px 0px 20px;
+    }
+    
+    .subasta {
+        width: 40px;
+        height:40px;
+        margin: 14px 20px 0px 20px;
+    }
+    
+    .perfil {
+        width: 40px;
+        height:40px;
+        margin: 14px 20px 0px 20px;
     }
 }
