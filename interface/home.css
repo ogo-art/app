@@ -64,11 +64,11 @@ body {
     bottom: 18px;
 }
 
-h1 {
+h6 {
     background: transparent;
     width: 100%;
     max-width: 960px;
-    font-size: 1.rem;
+    font-size: 2rem;
     font-family: 'Lori Bold';
     color: black;
     margin-top: 20px;
@@ -168,7 +168,7 @@ h2 {
 
 /* Aplica solo la rotación a la imagen */
 .canvi.girar .imagen-girar {
-    transform: rotate(60deg);
+    transform: rotate(-90deg);
 }
 
 .siguiendo {
@@ -182,9 +182,6 @@ h2 {
 .oculto {
     display: none;
 }
-
-
-
 
 .container {
     background: transparent;
@@ -456,7 +453,7 @@ h2 {
 
     /* Ajuste de las exposiciones */
     .expo {
-        background: grey;
+        background-color: grey;
         width: 460px;
         height: 460px;
         float: left;
@@ -501,7 +498,7 @@ h2 {
         background: transparent;
         width: 100%;
         max-width: 960px;
-        font-size: 1rem;
+        font-size: 6rem;
         font-family: 'Lori Bold';
         color: black;
         margin-top: 20px;

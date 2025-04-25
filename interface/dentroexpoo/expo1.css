@@ -276,3 +276,173 @@ body {
     opacity: 1;
 }
 
+@media screen and (max-width: 480px){
+    /*aqui va el disseny smartphone*/
+
+    .foto{
+        height: 250px;
+        margin: 0 auto;
+        background-image: url(imgexpos/expo1.jpg);
+        background-size: 100%;
+        background-position: 0px 0px;
+    }
+    
+    .foto h1{
+        font-size: 3rem;
+        top: 180px;
+    }
+
+    .empresa{
+        width: 100%;
+        height: 60px;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    
+    .identitat {
+        width: 70px;
+        height: 70px;
+        margin: 0px 0px;
+        border-radius: 10px;
+        background-size: 120%;
+        background-position: -8px -8px;
+        background-repeat: no-repeat;
+    }
+    
+    .empresa h1{
+        font-size: 1.5rem;
+        background: transparent;
+        color: black;
+        font-family: 'Lori Bold';
+        padding-left: 10px;
+        padding-top: 30px;
+    }
+    
+    .empresa h2{
+        font-size: 1rem;
+        background: transparent;
+        color: rgb(90, 90, 90);
+        font-family: 'Lori Medium';
+        padding-left: 10px;
+    }
+
+    .container {
+        background: rgb(245, 239, 255);
+        width: 100%;
+        max-width: 960px;
+        height: fit-content;
+        margin-top: 25px;
+        box-shadow: rgb(159, 159, 159) 0px 0px 10px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .container h1{
+        background: transparent;
+        font-family: 'Lori Bold';
+        font-size: 1.8rem;
+        padding: 20px 0px 0px 20px;
+    }
+    
+    .container h2{
+        background: transparent;
+        font-family: 'Lori Bold';
+        font-size: 1.4rem;
+        padding: 10px 0px 0px 20px;
+    }
+    
+    .container p {
+        color: grey;
+        background: transparent;
+        font-family: 'Lori Medium';
+        font-size: 1rem;
+        padding: 5px 5% 0px 20px;
+    }
+
+    .obres {
+        width: 100%;
+        max-width: 960px;
+        height: fit-content;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    
+    .obres h1 {
+        font-family: 'Lori Bold';
+        font-size: 1.8rem;
+        padding: 20px 0px 0px 20px;
+    }
+    
+    .expo {
+        background: grey;
+        width: 210px;
+        height: 210px;
+        float: left;
+        margin: 5px 5px 5px 5px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+    }
+    
+    .expo1 {
+        background-image: url('../fotosart/expo1.jpeg');
+    }
+
+    
+    .moti h1 {
+        font-size: 1.5rem;
+        background: transparent;
+        color: #591662;
+        font-family: 'Lori Medium';
+        padding-left: 10px;
+        text-align: center;
+        padding: 20px 0px 90px 0px;
+    }
+    
+
+    /* NAVEGACIÓ*/
+
+    .nave{
+        background: #591662;
+        width: 100%;
+        height: 65px;
+        position: fixed;
+        justify-content: center;
+        display: flex;
+    }
+
+    .home {
+        width: 40px;
+        height:40px;
+        margin: 14px 20px 0px 20px;
+    }
+    
+    .exposi {
+        width: 40px;
+        height: 40px;
+        margin: 14px 20px 0px 20px;
+    }
+    
+    .subir {
+        width: 55px;
+        height:55px;
+        margin: 6px 20px 0px 20px;
+    }
+    
+    .subasta {
+        width: 40px;
+        height:40px;
+        margin: 14px 20px 0px 20px;
+    }
+    
+    .perfil {
+        width: 40px;
+        height:40px;
+        margin: 14px 20px 0px 20px;
+    }
+
+
+
+    }
