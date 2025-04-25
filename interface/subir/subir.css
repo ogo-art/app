@@ -1,0 +1,343 @@
+@font-face {
+  font-family: 'Lori Bold';
+  src: url('../../fonts/LoriBold.woff2') format('woff2'),
+       url('../../fonts/LoriBold.woff') format('woff'),
+       url('../../fonts/LoriBold.ttf') format('truetype'),
+       url('../../fonts/LoriBold.svg') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lori Medium';
+  src: url('../../fonts/LoriMedium.woff2') format('woff2'),
+       url('../../fonts/LoriMedium.woff') format('woff'),
+       url('../../fonts/LoriMedium.ttf') format('truetype'),
+       url('../../fonts/LoriMedium.svg') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Reset global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos generales del body */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 100vh;
+  padding-bottom: 100px;
+  overflow-x: hidden;
+}
+
+.container {
+  text-align: center;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding-top: 80px;
+  padding-bottom: 100px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  color: #333;
+}
+
+.texto {
+  width: 100%;
+  text-align: left;
+  font-family: 'Lori Medium', sans-serif;
+  font-size: 1.5rem;
+  padding-left: 10px;
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.cajas {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: flex-start;
+  width: 100%;
+  align-items: center;
+  margin-top: 20px;
+  max-height: 100%;
+}
+
+/* Estilos de las cajas de "Nom", "Temàtica Exposició" y "Preu" */
+.caja {
+  width: 100%;
+  background-color: #ffffff;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: 'Lori Medium', sans-serif;
+  font-size: 1rem;
+  color: #333;
+  resize: none;
+  height: auto; /* Permitimos que la caja crezca según el contenido */
+  min-height: 50px; /* Establecemos una altura mínima */
+  overflow: hidden; /* Eliminar scroll */
+}
+
+/* Para "Preu" en la sección específica */
+#preuSection textarea {
+  height: auto; /* Se ajusta a la altura del contenido */
+  min-height: 50px;
+  resize: none;
+  overflow: hidden; /* Eliminar scroll */
+}
+
+/* Las cajas de "Nom", "Temàtica Exposició", y "Preu" tienen el siguiente estilo específico */
+.texto:nth-child(2) + .caja,
+.texto:nth-child(4) + .caja,
+#preuSection textarea {
+  min-height: 50px; /* Establecemos una altura mínima */
+}
+
+/* Cajas con mayor contenido (como "Preu" y otras más grandes) */
+#preuSection textarea,
+.caja-descripcio,
+.caja-subhastes {
+  background-color: #ffffff;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: 'Lori Medium', sans-serif;
+  font-size: 1rem;
+  color: #333;
+  resize: none;
+  height: auto; /* Permite que crezca dinámicamente */
+  min-height: 150px; /* Establecemos una altura mínima */
+  max-height: none; /* Sin límite de altura */
+  overflow: hidden; /* Eliminar scroll */
+}
+
+/* Section para el área de "Preu" */
+#preuSection {
+  display: block;
+  margin-top: 10px;
+}
+
+#preuSection.active {
+  display: block;
+}
+
+.texto label {
+  font-family: 'Lori Medium', sans-serif;
+  font-size: 1.5rem;
+  color: #333;
+  display: inline-block;
+  padding-left: 10px;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #591662;
+}
+
+.nave {
+  background: #591662;
+  width: 100%;
+  max-width: 960px;
+  height: 80px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: fixed;
+  justify-content: center;
+  display: flex;
+}
+
+.home {
+  opacity: 0.5;
+  background: transparent;
+  width: 40px;
+  height:40px;
+  margin: 20px 5%;
+  float: left;
+  background-image: url(../../img/home.png);
+  background-size: contain;  
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+.home:hover {
+  opacity: 1;
+}
+
+.exposi {
+  opacity: 0.5;
+  background: transparent;
+  width: 40px;
+  height: 40px;
+  margin: 20px 5%;
+  float: left;
+  background-image: url(../../img/expo.png);
+  background-size: contain;  
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+
+.exposi:hover {
+  opacity: 1;
+}
+
+.subir {
+  opacity: 1;
+  background: transparent;
+  width: 70px;
+  height:70px;
+  margin: 5px 50px;
+  float: left;
+  background-image: url(../../img/subir.png);
+  background-size: contain;  
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+
+.subir:hover {
+  opacity: 1;
+}
+
+.subasta {
+  opacity: 0.5;
+  background: transparent;
+  width: 40px;
+  height:40px;
+  margin: 20px 5%;
+  float: left;
+  background-image: url(../../img/subasta.png);
+  background-size: contain;  
+  background-repeat: no-repeat;
+  background-position: 3px 0px;
+}
+
+.subasta:hover {
+  opacity: 1;
+}
+
+.perfil {
+  opacity: 0.5;
+  background: transparent;
+  width: 40px;
+  height:40px;
+  margin: 20px 5%;
+  float: left;
+  background-image: url(../../img/perfil.png);
+  background-size: contain;  
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+
+.perfil:hover {
+  opacity: 1;
+}
+
+/* Botón Confirmar */
+.confirmar-container {
+  margin-top: 30px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#confirmar-btn {
+  padding: 12px 24px;
+  background-color: #591662;
+  color: white;
+  font-family: 'Lori Medium', sans-serif;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  width: auto;
+  transition: background-color 0.3s ease;
+}
+
+#confirmar-btn:hover {
+  background-color: #4a105a;
+}
+
+/* ---------- Cuadrado con esquinas (completo con 4 esquinas) ---------- */
+.cuadrado {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-color: transparent;
+  margin: 20px auto;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Esquinas */
+.corner {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 4px solid #5BC0BE;
+}
+
+.top-left {
+  top: 0;
+  left: 0;
+  border-right: none;
+  border-bottom: none;
+}
+
+.top-right {
+  top: 0;
+  right: 0;
+  border-left: none;
+  border-bottom: none;
+}
+
+.bottom-left {
+  bottom: 0;
+  left: 0;
+  border-top: none;
+  border-right: none;
+}
+
+.bottom-right {
+  bottom: 0;
+  right: 0;
+  border-top: none;
+  border-left: none;
+}
+
+/* Estilos para el contenedor de archivo */
+.upload-label {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #5BC0BE;
+  color: white;
+  font-family: 'Lori Medium', sans-serif;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  z-index: 1;
+  text-align: center;
+}
+
+.upload-input {
+  display: none; /* Esconde el input de archivo */
+}

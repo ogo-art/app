@@ -51,7 +51,7 @@ h2{
 h3{
     font-size: 1.2rem;
     margin: 10px 0px -8px 0px;
-    padding: 0px 445px 0px 0px;
+    padding: 0px 420px 0px 0px;
 }
 
 .usuari {
@@ -76,6 +76,12 @@ h4{
     border-radius: 5px;
 }
 
+h6{
+    font-size: 1.2rem;
+    margin: 10px 0px -8px 0px;
+    padding: 0px 400px 0px 0px;
+}
+
 .contra {
     width: 500px; /* Puedes ajustar el tamaño según lo necesites */
     padding: 10px;
@@ -86,6 +92,11 @@ h4{
 
 .checkbox-container {
     margin-right: 410px;
+    margin-top: -20px;
+}
+
+.checkbox-container2 {
+    margin-right: 360px;
     margin-top: -20px;
 }
 
@@ -129,7 +140,7 @@ h5{
     border-radius: 10px;
     background: #5BC0BE; /* Para que el botón sea visible */
     box-shadow: 2px 2px 5px black; /* Sombras para mejorar la visibilidad */
-    margin-top: 70px; /* Espacio de 300px entre la imagen y el botón */
+    margin-top: 50px; /* Espacio de 300px entre la imagen y el botón */
     text-decoration: none;
 
     /* El text */

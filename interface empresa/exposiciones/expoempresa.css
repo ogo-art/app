@@ -1,0 +1,329 @@
+@font-face {
+    font-family: 'Lori Bold';
+    src: url('../../fonts/LoriBold.woff2') format('woff2'),
+        url('../../fonts/LoriBold.woff') format('woff'),
+        url('../../fonts/LoriBold.ttf') format('truetype'),
+        url('../../fonts/LoriBold.svg') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lori Medium';
+    src: url('../../fonts/LoriMedium.woff2') format('woff2'),
+        url('../../fonts/LoriMedium.woff') format('woff'),
+        url('../../fonts/LoriMedium.ttf') format('truetype'),
+        url('../../fonts/LoriMedium.svg') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: transparent;
+    padding-bottom: 90px; /* Añadimos espacio suficiente para que el contenido no quede cubierto */
+}
+
+
+h1 {
+    background: transparent;
+    width: 100%;
+    max-width: 960px;
+    font-size: 2rem;
+    font-family: 'Lori Bold';
+    color: black;
+    margin-top: 20px;
+    margin: 0 auto;
+}
+
+.expos {
+    width: 100%;
+    max-width: 960px;
+    height: 350px;
+    background: blue;
+    border-radius: 30px;
+    margin:  0 auto 10px auto;
+    top: 10px;
+}
+
+.etiqueta{
+    background: white;
+    width: 150px;
+    height: 35px;
+    left: 80%;
+    top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px black, 0 0 20px black;
+}
+
+.etiqueta h3{
+    background: transparent;
+    color: #5BC0BE;
+    font-family: 'Lori Medium';
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.expos h1{
+    background: transparent;
+    color: white;
+    font-family: 'Lori Bold';
+    font-size: 3rem;
+    top: 210px;
+    padding: 0px 0px 0px 20px;
+    text-shadow: 0 0 5px black, 0 0 10px black, 0 0 10px black;
+}
+
+.expos h2{
+    background: transparent;
+    color: white;
+    font-family: 'Lori Medium';
+    font-size: 1.5rem;
+    top: 210px;
+    padding: 0px 0px 0px 20px;
+    text-shadow: 0 0 5px black, 0 0 10px black, 0 0 10px black;
+}
+
+h2 {
+    max-width: 960px;
+    font-size: 2rem;
+    font-family: 'Lori Bold';
+    color: black;
+    margin-top: 15px;
+    margin: 0 auto;
+}
+
+.canvi {
+    max-width: 960px;
+    font-size: 2rem;
+    font-family: 'Lori Bold';
+    color: black;
+    margin-top: 15px;
+    margin: 0 auto;
+    background-image: url(../img/desplegar.png);
+    background-size: 20px;  
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+    text-indent: 40px;
+}
+
+.container {
+    background: transparent;
+    width: 100%;
+    max-width: 960px;
+    height: fit-content;
+    margin-top: 10px;
+    padding-bottom: 90px; /* Añadido padding para el espacio debajo del contenido */
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.perfil:hover {
+    opacity: 1;
+}
+
+.nave{
+    background: #591662;
+    width: 100%;
+    max-width: 960px;
+    height: 80px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: fixed;
+    justify-content: center;
+    display: flex;
+}
+
+.home {
+    opacity: 0.5;
+    background: transparent;
+    width: 40px;
+    height:40px;
+    margin: 20px 5%;
+    float: left;
+    background-image: url(../../img/home.png);
+    background-size: contain;  
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+}
+
+.home:hover {
+    opacity: 1;
+}
+
+.exposi {
+    opacity: 1;
+    background: transparent;
+    width: 40px;
+    height: 40px;
+    margin: 20px 5%;
+    float: left;
+    background-image: url(../../img/expo.png);
+    background-size: contain;  
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+}
+
+.subir {
+    opacity: 0.5;
+    background: transparent;
+    width: 70px;
+    height:70px;
+    margin: 5px 50px;
+    float: left;
+    background-image: url(../../img/subir.png);
+    background-size: contain;  
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+}
+
+.subir:hover {
+    opacity: 1;
+}
+
+.subasta {
+    opacity: 0.5;
+    background: transparent;
+    width: 40px;
+    height:40px;
+    margin: 20px 5%;
+    float: left;
+    background-image: url(../../img/subasta.png);
+    background-size: contain;  
+    background-repeat: no-repeat;
+    background-position: 3px 0px;
+}
+
+.subasta:hover {
+    opacity: 1;
+}
+
+.perfil {
+    opacity: 0.5;
+    background: transparent;
+    width: 40px;
+    height:40px;
+    margin: 20px 5%;
+    float: left;
+    background-image: url(../../img/perfil.png);
+    background-size: contain;  
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+}
+
+.perfil:hover {
+    opacity: 1;
+}
+
+@media screen and (max-width: 480px){
+
+    .buscador {
+        max-width: 420px;
+        height: 20px;
+    }
+    
+    .buscar{
+        width: 90%;
+        height: 25px;
+        box-sizing: border-box;
+    }
+    
+    .enter{
+        width: 10%;
+        height: 25px;
+    }
+    
+    .enter h1 {
+        font-size: 1.1rem;
+        bottom: 9px;
+    }
+    
+    h1 {
+        max-width: 420px;
+        font-size: 1.8rem;
+        margin-top: 10px;
+    }
+
+    .expos {
+        width: 100%;
+        max-width: 420px;
+        height: 200px;
+        border-radius: 20px;
+    }
+    
+    .etiqueta{
+        background: white;
+        width: 90px;
+        height: 25px;
+        left: 73%;
+        top: 15px;
+        border-radius: 5px; 
+    }
+    
+    .etiqueta h3{
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+    
+    .expos h1{
+        color: white;
+        font-size: 1.8rem;
+        top: 100px;
+        padding: 0px 0px 0px 15px;
+    }
+    
+    .expos h2{
+        font-size: 1.1rem;
+        top: 90px;
+        padding: 0px 0px 0px 15px;
+    }
+
+    h2 {
+        max-width: 420px;
+        font-size: 1.8rem;
+        margin-top: 10px;
+    }
+    
+ 
+
+    .container {
+        width: 100%;
+        max-width: 420px;
+        margin-top: 5px;
+        overflow: auto;
+        padding-bottom: 90px;
+    }
+
+    .nave{
+        background: #591662;
+        width: 100%;
+        height: 65px;
+        position: fixed;
+        justify-content: center;
+        display: flex;
+    }
+
+    .home, .exposi, .subasta, .perfil {
+        width: 600px;
+        height: 600px;
+        margin: 10px 10px;
+    }
+
+    .subir {
+        width: 700px;
+        height: 700px;
+        margin: 5px 50px;
+    }
+}
+
+

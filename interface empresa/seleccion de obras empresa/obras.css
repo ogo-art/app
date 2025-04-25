@@ -1,0 +1,330 @@
+/* === GENERAL === */
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.container {
+  background: white;
+  padding: 20px; /* 20px */
+  max-width: 960px; /* 960px */
+  width: 100%;
+  min-height: calc(100vh - 80px); /* calc(100vh - 80px) */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 120px; /* 120px */
+}
+
+/* === FILTRO === */
+.filtro-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 15px; /* 15px */
+  padding: 0 10px; /* 0 10px */
+  flex-wrap: wrap;
+  gap: 10px; /* 10px */
+}
+
+.checkbox-text {
+  display: flex;
+  align-items: center;
+  font-size: 1rem; /* 16px */
+  font-weight: bold;
+  gap: 10px; /* 10px */
+  white-space: nowrap;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+.filtro {
+  background: #52c1c1;
+  color: white;
+  border: none;
+  padding: 12px 20px; /* 12px 20px */
+  border-radius: 6px; /* 6px */
+  font-weight: bold;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+/* === FILTROS === */
+.filtros {
+  display: none; /* Inicialmente oculto */
+  margin-top: 20px; /* 20px */
+  width: 100%;
+  padding: 10px; /* 10px */
+  background-color: #f9f9f9;
+  border-radius: 6px; /* 6px */
+}
+
+.filtroBtn {
+  display: block;
+  padding: 10px; /* 10px */
+  margin: 5px 0; /* 5px 0 */
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  text-align: left;
+  cursor: pointer;
+  font-size: 1rem; /* 16px */
+  width: 100%;
+}
+
+.flecha {
+  font-size: 0.75rem; /* 12px */
+  margin-left: 5px; /* 5px */
+}
+
+/* === CUADRADOS DE OBRA === */
+.obras {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 10px; /* 10px */
+  width: 100%;
+  justify-items: center;
+  margin-bottom: 20px; /* 20px */
+}
+
+.cuadrados {
+  background-color: #1e3a8a;
+  width: 100%;
+  max-width: 290px; /* 290px */
+  height: 200px; /* 200px */
+  border-radius: 5px; /* 5px */
+  position: relative;
+  overflow: hidden;
+}
+
+.circle {
+  width: 20px; /* 20px */
+  height: 20px; /* 20px */
+  border-radius: 50%;
+  background-color: transparent;
+  position: absolute;
+  bottom: 10px; /* 10px */
+  right: 10px; /* 10px */
+  border: 2px solid red;
+  cursor: pointer;
+  display: none;
+}
+
+.circle.selected {
+  background-color: red;
+}
+
+/* === BOTONES FINALES === */
+.botones {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* 20px */
+  margin-top: 20px; /* 20px */
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.botones button {
+  background: #52c1c1;
+  color: white;
+  border: none;
+  padding: 15px 30px; /* 15px 30px */
+  border-radius: 6px; /* 6px */
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem; /* 16px */
+  min-width: 180px; /* 180px */
+}
+
+/* === BARRA DE NAVEGACIÓN === */
+.nave {
+  background: #591662;
+  width: 100%;
+  max-width: 960px; /* 960px */
+  height: 80px; /* 80px */
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: fixed;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 10px; /* 0 10px */
+}
+
+.nav-icon {
+  display: block;
+  width: 40px; /* 40px */
+  height: 40px; /* 40px */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+
+.nav-icon:hover {
+  opacity: 1;
+}
+
+.home {
+  opacity: 0.5;
+  background: transparent;
+  width: 40px; /* 40px */
+  height: 40px; /* 40px */
+  margin: 20px 5%; /* 20px 5% */
+  float: left;
+  background-image: url(../../img/home.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+
+.home:hover {
+  opacity: 1;
+}
+
+.exposi {
+  opacity: 0.5;
+  background: transparent;
+  width: 40px; /* 40px */
+  height: 40px; /* 40px */
+  margin: 20px 5%; /* 20px 5% */
+  float: left;
+  background-image: url(../../img/expo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+
+.exposi:hover {
+  opacity: 1;
+}
+
+.subir {
+  opacity: 0.5;
+  background: transparent;
+  width: 70px; /* 70px */
+  height: 70px; /* 70px */
+  margin: 5px 50px; /* 5px 50px */
+  float: left;
+  background-image: url(../../img/subir.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+
+.subir:hover {
+  opacity: 1;
+}
+
+.subasta {
+  opacity: 1;
+  background: transparent;
+  width: 40px; /* 40px */
+  height: 40px; /* 40px */
+  margin: 20px 5%; /* 20px 5% */
+  float: left;
+  background-image: url(../../img/subasta.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 3px 0px;
+}
+
+.perfil {
+  opacity: 0.5;
+  background: transparent;
+  width: 40px; /* 40px */
+  height: 40px; /* 40px */
+  margin: 20px 5%; /* 20px 5% */
+  float: left;
+  background-image: url(../../img/perfil.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+
+.perfil:hover {
+  opacity: 1;
+}
+
+/* === RESPONSIVE === */
+@media screen and (max-width: 768px) {
+  .filtro-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .botones {
+    flex-direction: column;
+    gap: 10px; /* 10px */
+  }
+
+  .nave {
+    height: auto;
+    padding: 10px 0; /* 10px 0 */
+    flex-wrap: wrap;
+  }
+
+  .nav-icon {
+    width: 35px; /* 35px */
+    height: 35px; /* 35px */
+    margin: 10px; /* 10px */
+  }
+
+  .subir {
+    width: 60px; /* 60px */
+    height: 60px; /* 60px */
+  }
+
+  /* Cambiar a dos columnas */
+  .obras {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .filtro {
+    width: 100%;
+    text-align: center;
+  }
+
+  .botones button {
+    width: 100%;
+  }
+
+  .nav-icon {
+    width: 30px; /* 30px */
+    height: 30px; /* 30px */
+  }
+
+  .subir {
+    width: 50px; /* 50px */
+    height: 50px; /* 50px */
+  }
+
+  /* Mantener dos columnas en pantallas móviles */
+  .obras {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Mantener la barra de navegación fija en la parte inferior */
+  .nave {
+    height: 60px; /* 60px */
+    padding: 10px 0; /* 10px 0 */
+  }
+}

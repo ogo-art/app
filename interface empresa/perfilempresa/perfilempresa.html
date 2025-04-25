@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Perfil Empresa - Logos</title>
+  <link rel="stylesheet" href="perfilempresa.css" />
+</head>
+<body>
+
+  <!-- Barra de navegación -->
+  <div class="nave">
+    <a href="../home.html" class="home"></a>
+    <a href="../expos/principal.html" class="exposi"></a>
+    <a href="../subir/subir.html" class="subir"></a>
+    <a href="./subasta.html" class="subasta"></a>
+    <a href="../perfil/perfil1.html" class="perfil"></a>
+  </div>
+
+  <!-- Contenedor principal -->
+  <div class="perfil-container">
+    <!-- Información principal -->
+    <div class="perfil-info">
+      <div class="perfil-img">
+        <div class="perfil-img-cuadrado"></div>
+      </div>
+      <div class="perfil-details">
+        <h2>Galeria NovaForma</h2>
+        <p class="ubicacion">Barcelona, España</p>
+        <p class="descripcion">
+          Curamos i promovem artistes emergents a través d’exposicions amb discurs. Donem veu a l’art com a eina de pensament i transformació.
+        </p>
+        <div class="stats">
+          <p>12<span>Exposicions</span></p>
+          <p>+80<span>Artistes mostrats</span></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tabs -->
+    <div class="tabs">
+      <div class="tab active" id="exposiciones-tab" onclick="toggleTab('exposiciones')">Exposicions</div>
+      <div class="tab" id="sobre-tab" onclick="toggleTab('sobre')">Sobre nosaltres</div>
+    </div>
+
+    <!-- Contenidos -->
+    <div class="tab-content" id="exposiciones">
+      <div class="galeria">
+        <div class="publicacion" style="background-image: url(../img/expo1.jpg);"></div>
+        <div class="publicacion" style="background-image: url(../img/expo2.jpg);"></div>
+        <div class="publicacion" style="background-image: url(../img/expo3.jpg);"></div>
+        <div class="publicacion" style="background-image: url(../img/expo4.jpg);"></div>
+      </div>
+    </div>
+
+    <div class="tab-content" id="sobre" style="display: none;">
+      <div class="sobre-mi">
+        <h3>Sobre nosaltres</h3>
+        <p>
+          NovaForma és una plataforma de curació artística contemporània centrada en la promoció de nous discursos visuals. Organitzem exposicions, creem connexions entre artistes i espais i apostem pel valor del logos com a forma de comunicar a través de l’art.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleTab(tab) {
+      const exposiciones = document.getElementById('exposiciones');
+      const sobre = document.getElementById('sobre');
+      const exposTab = document.getElementById('exposiciones-tab');
+      const sobreTab = document.getElementById('sobre-tab');
+
+      if (tab === 'exposiciones') {
+        exposiciones.style.display = 'block';
+        sobre.style.display = 'none';
+        exposTab.classList.add('active');
+        sobreTab.classList.remove('active');
+      } else {
+        exposiciones.style.display = 'none';
+        sobre.style.display = 'block';
+        exposTab.classList.remove('active');
+        sobreTab.classList.add('active');
+      }
+    }
+  </script>
+
+</body>
+</html>

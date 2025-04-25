@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <title>Obres</title>
+  <link rel="stylesheet" href="obras.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Agrupa checkbox con texto + botón -->
+    <div class="filtro-box">
+      <div class="checkbox-text">
+        <input type="checkbox" id="seleccionar">
+        <label for="seleccionar">Selecciona l'obra</label>
+      </div>
+      <button class="filtro" id="filtrarBtn">FILTRAR</button>
+    </div>
+
+    <!-- Filtros, ocultos por defecto -->
+    <div id="filtros" class="filtros">
+      <p>Filtrar per:</p>
+      <button class="filtroBtn" id="autorBtn">Autor <span class="flecha">▼</span></button>
+      <div id="autorDropdown" class="dropdown" style="display: none;">
+        <select>
+          <option value="autor1">Autor 1</option>
+          <option value="autor2">Autor 2</option>
+          <option value="autor3">Autor 3</option>
+          <option value="autor4">Autor 4</option>
+        </select>
+      </div>
+
+      <button class="filtroBtn" id="especialitatBtn">Especialitat <span class="flecha">▼</span></button>
+      <div id="especialitatDropdown" class="dropdown" style="display: none;">
+        <select>
+          <option value="pintura">Pintura</option>
+          <option value="escultura">Escultura</option>
+          <option value="fotografia">Fotografia</option>
+          <option value="digital">Art Digital</option>
+        </select>
+      </div>
+
+      <button class="filtroBtn" id="dataBtn">Data <span class="flecha">▼</span></button>
+      <div id="dataDropdown" class="dropdown" style="display: none;">
+        <input type="date">
+      </div>
+    </div>
+
+    <div class="obras">
+      <!-- 12 cuadrados con los círculos añadidos -->
+      <div class="cuadrados">
+        <div class="circle"></div>
+      </div>
+      <div class="cuadrados">
+        <div class="circle"></div>
+      </div>
+      <div class="cuadrados">
+        <div class="circle"></div>
+      </div>
+      <div class="cuadrados">
+        <div class="circle"></div>
+      </div>
+      <div class="cuadrados">
+        <div class="circle"></div>
+      </div>
+      <div class="cuadrados">
+        <div class="circle"></div>
+      </div>
+      <div class="cuadrados">
+        <div class="circle"></div>
+      </div>
+      <div class="cuadrados">
+        <div class="circle"></div>
+      </div>
+      <div class="cuadrados">
+        <div class="circle"></div>
+      </div>
+      <div class="cuadrados">
+        <div class="circle"></div>
+      </div>
+      <div class="cuadrados">
+        <div class="circle"></div>
+      </div>
+      <div class="cuadrados">
+        <div class="circle"></div>
+      </div>
+      <div class="cuadrados">
+        <div class="circle"></div>
+      </div>
+      <div class="cuadrados">
+        <div class="circle"></div>
+      </div>
+      <div class="cuadrados">
+        <div class="circle"></div>
+      </div>
+      <div class="cuadrados">
+        <div class="circle"></div>
+      </div>
+      <div class="cuadrados">
+        <div class="circle"></div>
+      </div>
+      <div class="cuadrados">
+        <div class="circle"></div>
+      </div>
+    </div>
+
+    <div class="botones">
+      <button>Vista prèvia</button>
+      <button>Guardar</button>
+    </div>
+  </div>
+
+  <!-- Barra de navegación -->
+  <div class="nave">
+    <a href="../home.html" class="home"></a>
+    <a href="../expos/principal.html" class="exposi"></a>
+    <a href="../subir/subir.html" class="subir"></a>
+    <a href="./subasta.html" class="subasta"></a>
+    <a href="../perfil/perfil1.html" class="perfil"></a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

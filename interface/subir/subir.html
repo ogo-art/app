@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Subir Subasta</title>
+  <link rel="stylesheet" href="subir.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Pujar Obra</h1>
+
+    <!-- Cuadrado con esquinas y input dentro -->
+    <div class="cuadrado">
+      <div class="corner top-left"></div>
+      <div class="corner top-right"></div>
+      <div class="corner bottom-left"></div>
+      <div class="corner bottom-right"></div>
+      <label for="upload-image" class="upload-label">
+        Seleccionar archivo
+        <input type="file" id="upload-image" class="upload-input" />
+      </label>
+    </div>
+
+    <div class="cajas">
+      <div class="texto">Nom de la Subasta</div>
+      <textarea class="caja" id="nombre-subasta" placeholder="Nombre de la obra..." oninput="autoResize(this)"></textarea>
+
+      <div class="texto">Temàtica Exposició</div>
+      <textarea class="caja" placeholder="Temática de la obra..." oninput="autoResize(this)"></textarea>
+      
+      <div class="texto">
+        Subhastes
+        <label>
+          <input type="checkbox" id="checkboxSubhastes" onclick="togglePreu()"> Activar Preu
+        </label>
+      </div>
+      
+      <!-- Solo se muestra la caja de texto si el checkbox está marcado -->
+      <textarea class="caja" id="subhastesTextarea" style="display: none;" placeholder="Escribe la subhasta..." oninput="autoResize(this)"></textarea>
+
+      <div id="preuSection" style="display: none;">
+        
+      </div>
+
+      <div class="texto">Descripció</div>
+      <textarea class="caja caja-descripcio" placeholder="Escribe aquí..." oninput="autoResize(this)"></textarea>
+    </div>
+
+    <!-- Botón Confirmar debajo de la caja de descripción -->
+    <div class="confirmar-container">
+      <button id="confirmar-btn" onclick="confirmar()">Confirmar Subasta</button>
+    </div>
+  </div>
+
+  <div class="nave">
+    <a href="../home.html" class="home"></a>
+    <a href="../expos/principal.html" class="exposi"></a>
+    <a href="../subir/subir.html" class="subir"></a>
+    <a href="./../subasta/subasta.html" class="subasta"></a>
+    <a href="../perfil/perfil1.html" class="perfil"></a>
+  </div>
+
+  <script src="subir.js"></script>
+</body>
+</html>

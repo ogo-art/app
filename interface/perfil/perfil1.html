@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="perfil1.css">
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <div class="nave">
+        <a href="../home.html" class="home"></a>
+        <a href="../expos/principal.html" class="exposi"></a>
+        <a href="../subir/subir.html" class="subir"></a>
+        <a href="./subasta.html" class="subasta"></a>
+        <a href="../perfil/perfil1.html" class="perfil"></a>
+    </div>
+
+    <!-- Contenedor principal del perfil -->
+    <div class="perfil-container">
+        <!-- Foto de perfil y detalles -->
+        <div class="perfil-info">
+            <div class="perfil-img">
+                <!-- Cuadrado con borde en lugar de imagen -->
+                <div class="perfil-img-cuadrado"></div>
+            </div>
+            <div class="perfil-details">
+                <h2>Nombre de Usuario</h2>
+                <p class="ubicacion">Ubicación</p>
+                <div class="stats">
+                    <p>123<span>Seguidores</span></p>
+                    <p>45<span>Publicaciones</span></p>
+                </div>
+                <div class="acciones">
+                    <button class="seguir-btn">Seguir</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabs de Publicaciones y Sobre mí -->
+        <div class="tabs">
+            <div class="tab" id="publicaciones-tab" onclick="toggleTab('publicaciones')">Publicaciones</div>
+            <div class="tab" id="sobre-mi-tab" onclick="toggleTab('sobre-mi')">Sobre mí</div>
+        </div>
+
+        <!-- Contenido de las Tabs -->
+        <div class="tab-content" id="publicaciones">
+            <div class="galeria">
+                <div class="publicacion"></div>
+                <div class="publicacion"></div>
+                <div class="publicacion"></div>
+                <div class="publicacion"></div>
+                <div class="publicacion"></div>
+                <div class="publicacion"></div>
+                <div class="publicacion"></div>
+                <div class="publicacion"></div>
+            </div>
+        </div>
+
+        <div class="tab-content" id="sobre-mi" style="display: none;">
+            <div class="sobre-mi">
+                <h3>Sobre mí</h3>
+                <p>Este es el texto sobre mí.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleTab(tab) {
+            const publicaciones = document.getElementById('publicaciones');
+            const sobreMi = document.getElementById('sobre-mi');
+            const publicacionesTab = document.getElementById('publicaciones-tab');
+            const sobreMiTab = document.getElementById('sobre-mi-tab');
+
+            if (tab === 'publicaciones') {
+                publicaciones.style.display = 'block';
+                sobreMi.style.display = 'none';
+                publicacionesTab.style.opacity = '1';
+                sobreMiTab.style.opacity = '0.5';
+                publicacionesTab.style.borderBottom = '2px solid #3498db';
+                sobreMiTab.style.borderBottom = 'none';
+            } else {
+                publicaciones.style.display = 'none';
+                sobreMi.style.display = 'block';
+                publicacionesTab.style.opacity = '0.5';
+                sobreMiTab.style.opacity = '1';
+                publicacionesTab.style.borderBottom = 'none';
+                sobreMiTab.style.borderBottom = '2px solid #3498db';
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,345 @@
+/* Reset global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Diseño general del body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Contenedor principal del perfil */
+.perfil-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 960px;
+    margin-bottom: 100px;
+}
+
+/* Estilo para la sección de foto y datos */
+.perfil-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Cuadrado de perfil */
+.perfil-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    background-color: #3498db;
+    border: 3px solid #3498db;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.perfil-img-cuadrado {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #3498db;
+}
+
+/* Detalles del perfil */
+.perfil-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.perfil-details h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.perfil-details .ubicacion {
+    font-size: 1rem;
+    color: #888;
+}
+
+.perfil-details .descripcion {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Estadísticas */
+.stats {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.stats p {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.stats p span {
+    font-weight: normal;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Botones de acción */
+.acciones {
+    display: flex;
+    gap: 10px;
+}
+
+.acciones button {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+}
+
+.seguir-btn {
+    background-color: #3498db;
+    color: white;
+}
+
+.seguir-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-align: center;
+    opacity: 0.5;
+    transition: opacity 0.3s, border-bottom 0.3s;
+}
+
+.tab:hover {
+    opacity: 1;
+}
+
+#publicaciones-tab,
+#sobre-mi-tab {
+    border-bottom: 2px solid transparent;
+}
+
+#publicaciones-tab.active,
+#sobre-mi-tab.active {
+    opacity: 1;
+    border-bottom: 2px solid #3498db;
+}
+
+/* Contenedor de pestañas */
+.tab-content-wrapper {
+    min-height: 500px;
+    position: relative;
+}
+
+/* Contenido de tabs */
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Sección "Sobre mí" */
+.sobre-mi {
+    margin-top: 30px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.sobre-mi h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.sobre-mi p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Publicaciones */
+.publicaciones h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.publicacion {
+    background-color: #f4f4f4;
+    width: 100%;
+    padding-top: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Barra de navegación */
+.nave {
+    background: #591662;
+    width: 100%;
+    max-width: 960px;
+    height: 80px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: fixed;
+    z-index: 1000;
+    justify-content: center;
+    display: flex;
+  }
+  
+  .home {
+    opacity: 0.5;
+    background: transparent;
+    width: 40px;
+    height: 40px;
+    margin: 20px 5%;
+    float: left;
+    background-image: url(../../img/home.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+  }
+  
+  .home:hover {
+    opacity: 1;
+  }
+  
+  .exposi {
+    opacity: 0.5;
+    background: transparent;
+    width: 40px;
+    height: 40px;
+    margin: 20px 5%;
+    float: left;
+    background-image: url(../../img/expo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+  }
+  
+  .exposi:hover {
+    opacity: 1;
+  }
+  
+  .subir {
+    opacity: 0.5;
+    background: transparent;
+    width: 70px;
+    height: 70px;
+    margin: 5px 50px;
+    float: left;
+    background-image: url(../../img/subir.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+  }
+  
+  .subir:hover {
+    opacity: 1;
+  }
+  
+  .subasta {
+    opacity: 1;
+    background: transparent;
+    width: 40px;
+    height: 40px;
+    margin: 20px 5%;
+    float: left;
+    background-image: url(../../img/subasta.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 3px 0px;
+  }
+  
+  .subasta:hover {
+    opacity: 1;
+  }
+  
+  .perfil {
+    opacity: 0.5;
+    background: transparent;
+    width: 40px;
+    height: 40px;
+    margin: 20px 5%;
+    float: left;
+    background-image: url(../../img/perfil.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+  }
+  
+  .perfil:hover {
+    opacity: 1;
+  }
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .perfil-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .perfil-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .stats {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+}
