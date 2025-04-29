@@ -44,7 +44,7 @@ body {
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
-  padding-top: 0px;
+  padding-top: 80px;
   padding-bottom: 100px;
   box-sizing: border-box;
   overflow-y: auto;
@@ -52,10 +52,9 @@ body {
 
 h1 {
   font-size: 2rem;
-  margin-bottom: 70px;
-  margin-top: 50px;
-  color: black;
-  font-family: 'Lori Bold';
+  margin-bottom: 20px;
+  margin-top: 10px;
+  color: #333;
 }
 
 .texto {
@@ -260,13 +259,13 @@ textarea:focus {
 
 #confirmar-btn {
   padding: 12px 24px;
-  background-color: #5BC0BE;
+  background-color: #591662;
   color: white;
   font-family: 'Lori Medium', sans-serif;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   width: auto;
   transition: background-color 0.3s ease;
 }
@@ -334,7 +333,7 @@ textarea:focus {
   font-family: 'Lori Medium', sans-serif;
   border-radius: 8px;
   cursor: pointer;
-  font-size: 1.4rem;
+  font-size: 1rem;
   z-index: 1;
   text-align: center;
 }

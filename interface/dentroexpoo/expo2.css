@@ -1,0 +1,445 @@
+@font-face {
+    font-family: 'Lori Bold';
+    src: url('../../fonts/LoriBold.woff2') format('woff2'),
+        url('../../fonts/LoriBold.woff') format('woff'),
+        url('../../fonts/LoriBold.ttf') format('truetype'),
+        url('../../fonts/LoriBold.svg') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lori Medium';
+    src: url('../../fonts/LoriMedium.woff2') format('woff2'),
+        url('../../fonts/LoriMedium.woff') format('woff'),
+        url('../../fonts/LoriMedium.ttf') format('truetype'),
+        url('../../fonts/LoriMedium.svg') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: transparent;
+    overflow-x: hidden;
+}
+
+.foto{
+    background: transparent;
+    width: 100%;
+    max-width: 960px;
+    height: 350px;
+    margin: 0 auto;
+    background-image: url(imgexpos/expo2.jpeg);
+    background-size: 100%;
+    background-position: 0px -80px;
+    background-repeat: no-repeat;
+}
+
+.foto h1{
+    background: transparent;
+    color: white;
+    font-family: 'Lori Bold';
+    font-size: 3rem;
+    top: 265px;
+    padding: 0px 0px 0px 25px;
+    text-shadow: 0 0 5px black, 0 0 10px black, 0 0 10px black;
+}
+
+.empresa{
+    background: transparent;
+    width: 100%;
+    max-width: 960px;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: flex;
+
+}
+
+.identitat {
+    background: transparent;
+    width: 100px;
+    height: 100px;
+    margin: 0px 0px;
+    border-radius: 0px;
+    background-image: url(imgexpos/logo2.jpg);
+    background-size: 90%;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+}
+
+.textos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.empresa h1{
+    font-size: 1.8rem;
+    background: transparent;
+    color: black;
+    font-family: 'Lori Bold';
+    padding-left: 10px;
+    padding-top: 30px;
+}
+
+.empresa h2{
+    font-size: 1.2rem;
+    background: transparent;
+    color: rgb(90, 90, 90);
+    font-family: 'Lori Medium';
+    padding-left: 10px;
+}
+
+.container {
+    background: rgb(245, 239, 255);
+    width: 100%;
+    max-width: 960px;
+    height: fit-content;
+    margin: 0 auto;
+    margin-top: 20px;
+    box-shadow: rgb(159, 159, 159) 0px 0px 10px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.container h1{
+    background: transparent;
+    font-family: 'Lori Bold';
+    font-size: 2rem;
+    padding: 20px 0px 0px 20px;
+}
+
+.container h2{
+    background: transparent;
+    font-family: 'Lori Bold';
+    font-size: 1.6rem;
+    padding: 10px 0px 0px 20px;
+}
+
+.container p {
+    color: grey;
+    background: transparent;
+    font-family: 'Lori Medium';
+    font-size: 1.1rem;
+    padding: 5px 5% 0px 20px;
+}
+
+.obres {
+    background: transparent;
+    width: 100%;
+    max-width: 960px;
+    height: fit-content;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.obres h1 {
+    background: transparent;
+    font-family: 'Lori Bold';
+    font-size: 2rem;
+    padding: 20px 0px 0px 20px;
+}
+
+.expo {
+    background: grey;
+    width: 230px;
+    height: 230px;
+    float: left;
+    margin: 4px 4px 4px 4px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.expo1 {
+    background-image: url('../fotosart/expo2.jpeg');
+}
+
+.moti {
+    background: transparent;
+    margin: o auto;
+}
+
+.moti h1 {
+    font-size: 1.5rem;
+    background: transparent;
+    color: #591662;
+    font-family: 'Lori Medium';
+    padding-left: 10px;
+    text-align: center;
+    padding: 20px 0px 110px 0px;
+}
+
+.nave{
+    background: #591662;
+    width: 100%;
+    max-width: 960px;
+    height: 80px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: fixed;
+    justify-content: center;
+    display: flex;
+}
+
+.home {
+    opacity: 0.5;
+    background: transparent;
+    width: 40px;
+    height:40px;
+    margin: 20px 5%;
+    float: left;
+    background-image: url(../../img/home.png);
+    background-size: contain;  
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+}
+
+.home:hover {
+    opacity: 1;
+}
+
+.exposi {
+    opacity: 1;
+    background: transparent;
+    width: 40px;
+    height: 40px;
+    margin: 20px 5%;
+    float: left;
+    background-image: url(../../img/expo.png);
+    background-size: contain;  
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+}
+
+
+.subir {
+    opacity: 0.5;
+    background: transparent;
+    width: 70px;
+    height:70px;
+    margin: 5px 50px;
+    float: left;
+    background-image: url(../../img/subir.png);
+    background-size: contain;  
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+}
+
+.subir:hover {
+    opacity: 1;
+}
+
+.subasta {
+    opacity: 0.5;
+    background: transparent;
+    width: 40px;
+    height:40px;
+    margin: 20px 5%;
+    float: left;
+    background-image: url(../../img/subasta.png);
+    background-size: contain;  
+    background-repeat: no-repeat;
+    background-position: 3px 0px;
+}
+
+.subasta:hover {
+    opacity: 1;
+}
+
+.perfil {
+    opacity: 0.5;
+    background: transparent;
+    width: 40px;
+    height:40px;
+    margin: 20px 5%;
+    float: left;
+    background-image: url(../../img/perfil.png);
+    background-size: contain;  
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+}
+
+.perfil:hover {
+    opacity: 1;
+}
+
+@media screen and (max-width: 480px){
+    /*aqui va el disseny smartphone*/
+
+    .foto{
+        height: 250px;
+        margin: 0 auto;
+        background-size: 100%;
+        background-position: 0px 0px;
+    }
+    
+    .foto h1{
+        font-size: 3rem;
+        top: 180px;
+    }
+
+    .empresa{
+        width: 100%;
+        height: 60px;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    
+    .identitat {
+        width: 70px;
+        height: 70px;
+        margin: 0px 0px;
+        border-radius: 0px;
+        background-size: 90%;
+        background-position: 0px -0px;
+        background-repeat: no-repeat;
+    }
+    
+    .empresa h1{
+        font-size: 1.5rem;
+        background: transparent;
+        color: black;
+        font-family: 'Lori Bold';
+        padding-left: 10px;
+        padding-top: 30px;
+    }
+    
+    .empresa h2{
+        font-size: 1rem;
+        background: transparent;
+        color: rgb(90, 90, 90);
+        font-family: 'Lori Medium';
+        padding-left: 10px;
+    }
+
+    .container {
+        background: rgb(245, 239, 255);
+        width: 100%;
+        max-width: 960px;
+        height: fit-content;
+        margin-top: 25px;
+        box-shadow: rgb(159, 159, 159) 0px 0px 10px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .container h1{
+        background: transparent;
+        font-family: 'Lori Bold';
+        font-size: 1.8rem;
+        padding: 20px 0px 0px 20px;
+    }
+    
+    .container h2{
+        background: transparent;
+        font-family: 'Lori Bold';
+        font-size: 1.4rem;
+        padding: 10px 0px 0px 20px;
+    }
+    
+    .container p {
+        color: grey;
+        background: transparent;
+        font-family: 'Lori Medium';
+        font-size: 1rem;
+        padding: 5px 5% 0px 20px;
+    }
+
+    .obres {
+        width: 100%;
+        max-width: 960px;
+        height: fit-content;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    
+    .obres h1 {
+        font-family: 'Lori Bold';
+        font-size: 1.8rem;
+        padding: 20px 0px 0px 20px;
+    }
+    
+    .expo {
+        background: grey;
+        width: 210px;
+        height: 210px;
+        float: left;
+        margin: 5px 5px 5px 5px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+    }
+    
+
+
+    
+    .moti h1 {
+        font-size: 1.5rem;
+        background: transparent;
+        color: #591662;
+        font-family: 'Lori Medium';
+        padding-left: 10px;
+        text-align: center;
+        padding: 20px 0px 90px 0px;
+    }
+    
+
+    /* NAVEGACIÓ*/
+
+    .nave{
+        background: #591662;
+        width: 100%;
+        height: 65px;
+        position: fixed;
+        justify-content: center;
+        display: flex;
+    }
+
+    .home {
+        width: 40px;
+        height:40px;
+        margin: 14px 20px 0px 20px;
+    }
+    
+    .exposi {
+        width: 40px;
+        height: 40px;
+        margin: 14px 20px 0px 20px;
+    }
+    
+    .subir {
+        width: 55px;
+        height:55px;
+        margin: 6px 20px 0px 20px;
+    }
+    
+    .subasta {
+        width: 40px;
+        height:40px;
+        margin: 14px 20px 0px 20px;
+    }
+    
+    .perfil {
+        width: 40px;
+        height:40px;
+        margin: 14px 20px 0px 20px;
+    }
+
+
+
+    }

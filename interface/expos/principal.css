@@ -42,6 +42,11 @@ h1 {
     color: black;
     margin-top: 20px;
     margin: 0 auto;
+    padding-left: 10px;
+}
+
+a {
+    text-decoration: none;
 }
 
 .expos {
@@ -223,6 +228,50 @@ h2 {
 
 .perfil:hover {
     opacity: 1;
+}
+
+/* EXPOS */
+
+.expo1 {
+    background-image: url(../dentroexpoo/imgexpos/expo1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.expo2 {
+    background-image: url(../dentroexpoo/imgexpos/expo2.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.expo3 {
+    background-image: url(../dentroexpoo/imgexpos/expo3.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.expo4 {
+    background-image: url(../dentroexpoo/imgexpos/expo4.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.expo5 {
+    background-image: url(../dentroexpoo/imgexpos/expo5.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.expo6 {
+    background-image: url(../dentroexpoo/imgexpos/expo6.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.expo7 {
+    background-image: url(../dentroexpoo/imgexpos/expo7.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 480px){

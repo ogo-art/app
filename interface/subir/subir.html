@@ -8,7 +8,7 @@
 </head>
 <body>
   <div class="container">
-    <h1>PUJAR OBRA</h1>
+    <h1>Pujar Obra</h1>
 
     <!-- Cuadrado con esquinas y input dentro -->
     <div class="cuadrado">
@@ -17,17 +17,17 @@
       <div class="corner bottom-left"></div>
       <div class="corner bottom-right"></div>
       <label for="upload-image" class="upload-label">
-        Càrregar obra
+        Seleccionar archivo
         <input type="file" id="upload-image" class="upload-input" />
       </label>
     </div>
 
     <div class="cajas">
       <div class="texto">Nom de la Subasta</div>
-      <textarea class="caja" id="nombre-subasta" placeholder="Nombre de la obra..." oninput="autoResize(this)"></textarea>
+      <textarea class="caja" id="nombre-subasta" placeholder="Nom de l'obra..." oninput="autoResize(this)"></textarea>
 
       <div class="texto">Temàtica Exposició</div>
-      <textarea class="caja" placeholder="Temática de la obra..." oninput="autoResize(this)"></textarea>
+      <textarea class="caja" placeholder="Temàtica de l'obra..." oninput="autoResize(this)"></textarea>
       
       <div class="texto">
         Subhastes
@@ -37,19 +37,19 @@
       </div>
       
       <!-- Solo se muestra la caja de texto si el checkbox está marcado -->
-      <textarea class="caja" id="subhastesTextarea" style="display: none;" placeholder="Escribe la subhasta..." oninput="autoResize(this)"></textarea>
+      <textarea class="caja" id="subhastesTextarea" style="display: none;" placeholder="Preu de la subhasta..." oninput="autoResize(this)"></textarea>
 
       <div id="preuSection" style="display: none;">
         
       </div>
 
       <div class="texto">Descripció</div>
-      <textarea class="caja caja-descripcio" placeholder="Escribe aquí..." oninput="autoResize(this)"></textarea>
+      <textarea class="caja caja-descripcio" placeholder="Escriu aquí..." oninput="autoResize(this)"></textarea>
     </div>
 
     <!-- Botón Confirmar debajo de la caja de descripción -->
     <div class="confirmar-container">
-      <button id="confirmar-btn" onclick="confirmar()">Confirmar</button>
+      <button id="confirmar-btn" onclick="confirmar()">Confirmar Subasta</button>
     </div>
   </div>
 
