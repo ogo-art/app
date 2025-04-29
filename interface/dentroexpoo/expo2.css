@@ -288,7 +288,7 @@ body {
     
     .foto h1{
         font-size: 3rem;
-        top: 180px;
+        top: 170px;
     }
 
     .empresa{
@@ -378,15 +378,12 @@ body {
         width: 210px;
         height: 210px;
         float: left;
-        margin: 5px 5px 5px 5px;
+        margin: 4px 4px 4px 4px;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         border-radius: 10px;
     }
-    
-
-
     
     .moti h1 {
         font-size: 1.5rem;
@@ -439,7 +436,5 @@ body {
         height:40px;
         margin: 14px 20px 0px 20px;
     }
-
-
 
     }
