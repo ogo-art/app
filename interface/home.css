@@ -61,7 +61,7 @@ body {
     font-family: 'Lori Medium';
     text-align: center;
     color: white;
-    bottom: 18px;
+    bottom: 0px;
 }
 
 h6 {
@@ -71,7 +71,6 @@ h6 {
     font-size: 2rem;
     font-family: 'Lori Bold';
     color: black;
-    margin-top: 20px;
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 5px;
@@ -82,12 +81,11 @@ h6 {
     max-width: 960px;
     height: 350px;
     background: blue;
-    border-radius: 30px;
     margin:  0 auto;
-    background-image: url(../fotosart/expo1.jpeg);
+    background-image: url(dentroexpoo/imgexpos/expo4.jpg);
     background-size: 960px;  
     background-repeat: no-repeat;
-    background-position: 0px -400px;
+    background-position: 0px 0px;
 }
 
 .etiqueta{
@@ -113,7 +111,7 @@ h6 {
     color: white;
     font-family: 'Lori Bold';
     font-size: 3rem;
-    top: 180px;
+    top: 210px;
     padding: 0px 0px 0px 20px;
     text-shadow: 0 0 5px black, 0 0 10px black, 0 0 10px black;
 }
@@ -123,7 +121,7 @@ h6 {
     color: white;
     font-family: 'Lori Medium';
     font-size: 1.5rem;
-    top: 180px;
+    top: 205px;
     padding: 0px 0px 0px 20px;
     text-shadow: 0 0 5px black, 0 0 10px black, 0 0 10px black;
 }
@@ -186,7 +184,7 @@ h2 {
 .container {
     background: transparent;
     width: 100%;
-    max-width: 960px;
+    max-width: 970px;
     height: fit-content;
     margin-top: 10px;
     padding-bottom: 90px;
@@ -196,21 +194,25 @@ h2 {
 
 .expo {
     background: grey;
-    width: 460px;
-    height: 460px;
+    width: 475px;
+    height: 475px;
     float: left;
-    margin: 10px 10px 60px 10px;
+    margin: 5px 5px 65px 5px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .expo1 {
-    background-image: url('../fotosart/expo1.jpeg');
+    background-image: url('imageneshome/obra1.jpg');
+    background-repeat: no-repeat;
+    background-size: 140%;
 }
 
 .expo2 {
-    background-image: url('../fotosart/pexels-steve-1269968.jpg');
+    background-image: url('imageneshome/obra2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .expo3 {
@@ -259,9 +261,9 @@ h2 {
 
 .peu {
     background: transparent;
-    width: 460px;
+    width: 475px;
     height: 60px;
-    top: 420px;
+    top: 435px;
 }
 
 .peu h1 {
@@ -285,7 +287,7 @@ h2 {
     width: 30%;
     height: 40px;
     float: right;
-    bottom: 55px;
+    bottom: 53px;
     border-radius: 10px;
 }
 
@@ -379,15 +381,16 @@ h2 {
 
 .perfil {
     opacity: 0.5;
-    background: transparent;
+    background: blue;
     width: 40px;
     height:40px;
     margin: 20px 5%;
+    border-radius: 8px;
     float: left;
-    background-image: url(../img/perfil.png);
-    background-size: contain;  
+    background-image: url(../img/perfilapp.jpg);
+    background-size: 120%;  
     background-repeat: no-repeat;
-    background-position: 0px 0px;
+    background-position: -4px -4px;
 }
 
 .perfil:hover {
@@ -396,18 +399,62 @@ h2 {
 
 @media screen and (max-width: 440px) {
 
-    /* Ajuste para la etiqueta */
-    .etiqueta {
-        position: absolute;
-        left: 10px; /* Mover la etiqueta más a la izquierda */
-        top: 20px;
-        width: 150px;
+    
+    .buscador {
+        background: transparent;
+        width: 100%;
+        max-width: 420px;
+    }
+    
+    .buscar{
+        width: 75%;
+        height: 30px;
+        box-sizing: border-box;
+    }
+    
+    .enter{
+        width: 25%;
+        border-radius: 6px;
+    }
+    
+    .enter h1 {
+        background: transparent;
+        font-size: 1.4rem;
+        bottom: 0px;
+    }
+
+    h6 {
+        background: transparent;
+        width: 100%;
+        max-width: 420px;
+        font-size: 2rem;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .expos {
+        width: 100%;
+        height: 250px;
+        background: blue;
+        border-radius: 0px;
+        background-image: url(dentroexpoo/imgexpos/expo4.jpg);
+        background-size: 100%;  
+        background-repeat: no-repeat;
+        background-position: 0px 0px;
+    }
+    
+    .etiqueta{
+        background: white;
+        width: 120px;
         height: 35px;
+        left: 67%;
+        top: 20px;
         border-radius: 10px;
         box-shadow: 0 0 5px black, 0 0 20px black;
     }
-
-    .etiqueta h3 {
+    
+    .etiqueta h3{
         background: transparent;
         color: #5BC0BE;
         font-family: 'Lori Medium';
@@ -415,17 +462,92 @@ h2 {
         text-align: center;
         line-height: 2rem;
     }
+    
+    .expos h1{
+        color: white;
+        font-family: 'Lori Bold';
+        font-size: 2rem;
+        top: 140px;
+        padding: 0px 0px 0px 20px;
+        text-shadow: 0 0 5px black, 0 0 10px black, 0 0 10px black;
+    }
+    
+    .expos h2{
+        background: transparent;
+        color: white;
+        font-family: 'Lori Medium';
+        font-size: 1.1rem;
+        top: 140px;
+        padding: 0px 0px 0px 22px;
+        text-shadow: 0 0 5px black, 0 0 10px black, 0 0 10px black;
+    }
 
-    /* Ajuste para el botón de "Seguir" */
+    .container {
+        background: red;
+        width: 100%;
+        max-width: 460px;
+        height: fit-content;
+        margin-top: 10px;
+        padding-bottom: 90px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    
+    .expo {
+        background: grey;
+        width: 100%;
+        height: 420px;
+        float: left;
+        margin: 5px 0px 65px 0px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .guardar {
+        background: transparent;
+        width: 40px;
+        height: 40px;
+        left: 390px;
+        top: 20px;
+        background-size: contain;  
+        background-repeat: no-repeat;
+        background-position: 7px 0px;
+    }
+    
+    .peu {
+        background: transparent;
+        width: 97%;
+        margin: 0 auto;
+        height: 60px;
+        top: 380px;
+    }
+    
+    .peu h1 {
+        background: transparent;
+        font-size: 1.8rem;
+        font-family: 'Lori Bold';
+        width: 70%;
+        margin: 0;
+    }
+    
+    .peu h2 {
+        background: transparent;
+        font-size: 1.2rem;
+        font-family: 'Lori Medium';
+        margin: 0;
+        width: 70%;
+    }
+    
     .seguir {
         background: #5BC0BE;
         width: 30%;
         height: 40px;
-        left: 10px; /* Mover el botón más a la izquierda */
-        bottom: 55px;
+        float: right;
+        bottom: 53px;
         border-radius: 10px;
     }
-
+    
     .seguir h1 {
         background: transparent;
         font-size: 1.5rem;
@@ -437,148 +559,8 @@ h2 {
         color: white;
     }
 
-    /* Ajuste para la exposición */
-    .expos {
-        width: 100%;
-        max-width: 960px;
-        height: 350px;
-        background: blue;
-        border-radius: 30px;
-        margin: 0 auto;
-        background-image: url(../fotosart/expo1.jpeg);
-        background-size: 960px;
-        background-repeat: no-repeat;
-        background-position: 0px -400px;
-    }
 
-    /* Ajuste de las exposiciones */
-    .expo {
-        background-color: grey;
-        width: 460px;
-        height: 460px;
-        float: left;
-        margin: 10px 10px 60px 10px;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
 
-    /* Ajuste de la etiqueta en exposiciones */
-    .etiqueta h3 {
-        background: transparent;
-        color: #5BC0BE;
-        font-family: 'Lori Medium';
-        font-size: 1.5rem;
-        text-align: center;
-        line-height: 2rem;
-    }
-
-    /* Ajustes en los textos dentro de la exposición */
-    .expos h1 {
-        color: white;
-        font-family: 'Lori Bold';
-        font-size: 3rem;
-        top: 180px;
-        padding: 0px 0px 0px 20px;
-        text-shadow: 0 0 5px black, 0 0 10px black, 0 0 10px black;
-    }
-
-    .expos h2 {
-        background: transparent;
-        color: white;
-        font-family: 'Lori Medium';
-        font-size: 1.5rem;
-        top: 180px;
-        padding: 0px 0px 0px 20px;
-        text-shadow: 0 0 5px black, 0 0 10px black, 0 0 10px black;
-    }
-
-    /* Ajuste de los textos en otras partes */
-    h1 {
-        background: transparent;
-        width: 100%;
-        max-width: 960px;
-        font-size: 6rem;
-        font-family: 'Lori Bold';
-        color: black;
-        margin-top: 20px;
-        margin: 0 auto;
-        margin-top: 20px;
-        margin-bottom: 5px;
-    }
-
-    h2 {
-        max-width: 960px;
-        font-size: 2rem;
-        font-family: 'Lori Bold';
-        color: black;
-        margin-top: 15px;
-        margin: 0 auto;
-    }
-
-    .canvi {
-        max-width: 960px;
-        font-family: 'Lori Bold';
-        color: black;
-        padding-top: 20px;
-        margin: 0 auto;
-        background-size: 15px;
-        background-repeat: no-repeat;
-        background-position: 10px 32px;
-        text-indent: 30px;
-        font-size: 1.6rem;
-    }
-
-    .container {
-        background: transparent;
-        width: 100%;
-        max-width: 960px;
-        height: fit-content;
-        margin-top: 10px;
-        padding-bottom: 90px;
-        margin: 0 auto;
-        overflow: hidden;
-    }
-
-    .guadar {
-        background: transparent;
-        width: 40px;
-        height: 40px;
-        left: 410px;
-        top: 10px;
-        background-image: url(../img/guardar.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: 7px 0px;
-    }
-
-    .peu {
-        background: transparent;
-        width: 460px;
-        height: 60px;
-        top: 420px;
-    }
-
-    .peu h1 {
-        background: transparent;
-        font-size: 1.8rem;
-        font-family: 'Lori Bold';
-        width: 70%;
-        margin: 0;
-    }
-
-    .peu h2 {
-        background: transparent;
-        font-size: 1.2rem;
-        font-family: 'Lori Medium';
-        margin: 0;
-        width: 70%;
-    }
-
-    /* Ajuste adicional para la etiqueta y el botón de seguir */
-    .seguir {
-        left: 10px; /* Para que esté alineado correctamente */
-    }
 
     /* NAVEGACIÓ*/
     .nave{
