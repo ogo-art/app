@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mi Expo Virtual</title>
+  <link rel="stylesheet" href="subirempresa.css" />
+</head>
+<body>
+
+  <!-- Encabezado de la Expo -->
+  <header>
+    <div class="portada" id="portada">
+      <input type="file" id="portadaInput" accept="image/*" />
+      <div class="menu" id="menuPortada">
+        <span>⋮</span>
+        <div class="menu-options">
+          <button id="cambiarPortada">Cambiar portada</button>
+        </div>
+      </div>
+    </div>
+    <h1>🖼️ Crea tu Expo</h1>
+  </header>
+
+  <main class="formulario">
+    <form id="expoForm">
+      <label for="titulo">Título de la obra</label>
+      <input type="text" id="titulo" required placeholder="Ej: Cielo Mágico" />
+
+      <label for="descripcion">Descripción</label>
+      <textarea id="descripcion" rows="3" required placeholder="Describe tu obra..."></textarea>
+
+      <label for="fechaInicio">Fecha de inicio</label>
+      <input type="date" id="fechaInicio" required />
+
+      <label for="fechaFin">Fecha de finalización</label>
+      <input type="date" id="fechaFin" required />
+
+      <label for="ubicacion">Ubicación de la exposición</label>
+      <input type="text" id="ubicacion" placeholder="Ej: Museo de Arte Contemporáneo" required />
+
+      <label for="imagen">Subir imagen de la obra</label>
+      <input type="file" id="imagen" accept="image/*" required />
+
+    </form>
+
+    <section class="preview" id="preview"></section>
+
+    <!-- Botón adicional para seleccionar varias obras -->
+    <div class="extra-options">
+      <button id="seleccionarObras">Seleccionar otras obras</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+  <!-- Barra de navegación -->
+  <div class="nave">
+    <a href="../homempresa/homempresa.html" class="home"></a>
+    <a href="../exposiciones/expoempresa.html" class="exposi"></a>
+    <a href="../subirempresa/subirempresa.html" class="subir"></a>
+    <a href="../subasta/subasta.html" class="subasta"></a>
+    <a href="../perfilempresa/perfilempresa.html" class="perfil"></a>
+</div>
+</body>
+</html>

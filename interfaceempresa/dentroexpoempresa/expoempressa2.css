@@ -38,7 +38,7 @@ body {
     max-width: 960px;
     height: 350px;
     margin: 0 auto;
-    background-image: url(imgexpos/expo1.jpg);
+    background-image: url(../../interface/dentroexpoo/imgexpos/expo2.jpeg);
     background-size: 100%;
     background-position: 0px -80px;
     background-repeat: no-repeat;
@@ -70,10 +70,10 @@ body {
     width: 100px;
     height: 100px;
     margin: 0px 0px;
-    border-radius: 15px;
-    background-image: url(imgexpos/logo1.jpg);
-    background-size: 120%;
-    background-position: -10px -10px;
+    border-radius: 0px;
+    background-image: url(../../interface/dentroexpoo/imgexpos/logo2.jpg);
+    background-size: 90%;
+    background-position: 0px 0px;
     background-repeat: no-repeat;
 }
 
@@ -163,55 +163,9 @@ body {
 }
 
 .expo1 {
-    background-image: url('exposicio1/img1.jpg');
-    background-repeat: no-repeat;
-    background-size: 150%;
+    background-image: url('../fotosart/expo2.jpeg');
 }
 
-.expo2 {
-    background-image: url('exposicio1/img2.jpg');
-    background-repeat: no-repeat;
-    background-size: 150%;
-}
-
-.expo3 {
-    background-image: url('exposicio1/img3.jpg');
-    background-repeat: no-repeat;
-    background-size: 150%;
-}
-
-.expo4 {
-    background-image: url('exposicio1/img4.jpg');
-    background-repeat: no-repeat;
-    background-size: 150%;
-}
-
-.expo5 {
-    background-image: url('exposicio1/img5.jpg');
-    background-repeat: no-repeat;
-    background-size: 150%;
-}
-
-.expo6 {
-    background-image: url('exposicio1/img6.jpg');
-    background-repeat: no-repeat;
-    background-size: 150%;
-}
-.expo7 {
-    background-image: url('exposicio1/img7.jpeg');
-    background-repeat: no-repeat;
-    background-size: 150%;
-}
-.expo8 {
-    background-image: url('exposicio1/img8.jpg');
-    background-repeat: no-repeat;
-    background-size: 150%;
-}
-.expo9 {
-    background-image: url('exposicio1/img9.jpg');
-    background-repeat: no-repeat;
-    background-size: 150%;
-}
 .moti {
     background: transparent;
     margin: o auto;
@@ -328,14 +282,13 @@ body {
     .foto{
         height: 250px;
         margin: 0 auto;
-        background-image: url(imgexpos/expo1.jpg);
         background-size: 100%;
         background-position: 0px 0px;
     }
     
     .foto h1{
         font-size: 3rem;
-        top: 180px;
+        top: 170px;
     }
 
     .empresa{
@@ -350,9 +303,9 @@ body {
         width: 70px;
         height: 70px;
         margin: 0px 0px;
-        border-radius: 10px;
-        background-size: 120%;
-        background-position: -8px -8px;
+        border-radius: 0px;
+        background-size: 90%;
+        background-position: 0px -0px;
         background-repeat: no-repeat;
     }
     
@@ -425,64 +378,12 @@ body {
         width: 210px;
         height: 210px;
         float: left;
-        margin: 5px 5px 5px 5px;
+        margin: 4px 4px 4px 4px;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         border-radius: 10px;
     }
-    
-    .expo1 {
-        background-image: url('exposicio1/img1.jpg');
-        background-repeat: no-repeat;
-        background-size: 150%;
-    }
-    
-    .expo2 {
-        background-image: url('exposicio1/img2.jpg');
-        background-repeat: no-repeat;
-        background-size: 150%;
-    }
-    
-    .expo3 {
-        background-image: url('exposicio1/img3.jpg');
-        background-repeat: no-repeat;
-        background-size: 150%;
-    }
-    
-    .expo4 {
-        background-image: url('exposicio1/img4.jpg');
-        background-repeat: no-repeat;
-        background-size: 150%;
-    }
-    
-    .expo5 {
-        background-image: url('exposicio1/img5.jpg');
-        background-repeat: no-repeat;
-        background-size: 150%;
-    }
-    
-    .expo6 {
-        background-image: url('exposicio1/img6.jpg');
-        background-repeat: no-repeat;
-        background-size: 150%;
-    }
-    .expo7 {
-        background-image: url('exposicio1/img7.jpeg');
-        background-repeat: no-repeat;
-        background-size: 150%;
-    }
-    .expo8 {
-        background-image: url('exposicio1/img8.jpg');
-        background-repeat: no-repeat;
-        background-size: 150%;
-    }
-    .expo9 {
-        background-image: url('exposicio1/img9.jpg');
-        background-repeat: no-repeat;
-        background-size: 150%;
-    }
-
     
     .moti h1 {
         font-size: 1.5rem;
@@ -535,7 +436,5 @@ body {
         height:40px;
         margin: 14px 20px 0px 20px;
     }
-
-
 
     }

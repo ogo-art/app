@@ -38,7 +38,7 @@ body {
     max-width: 960px;
     height: 350px;
     margin: 0 auto;
-    background-image: url(imgexpos/expo1.jpg);
+    background-image: url(../../interface/dentroexpoo/imgexpos/expo4.jpg);
     background-size: 100%;
     background-position: 0px -80px;
     background-repeat: no-repeat;
@@ -71,9 +71,9 @@ body {
     height: 100px;
     margin: 0px 0px;
     border-radius: 15px;
-    background-image: url(imgexpos/logo1.jpg);
-    background-size: 120%;
-    background-position: -10px -10px;
+    background-image: url(../../interface/dentroexpoo/imgexpos/logo4.jpg);
+    background-size: 100%;
+    background-position: 0px 7px;
     background-repeat: no-repeat;
 }
 
@@ -163,55 +163,9 @@ body {
 }
 
 .expo1 {
-    background-image: url('exposicio1/img1.jpg');
-    background-repeat: no-repeat;
-    background-size: 150%;
+    background-image: url('../fotosart/expo1.jpeg');
 }
 
-.expo2 {
-    background-image: url('exposicio1/img2.jpg');
-    background-repeat: no-repeat;
-    background-size: 150%;
-}
-
-.expo3 {
-    background-image: url('exposicio1/img3.jpg');
-    background-repeat: no-repeat;
-    background-size: 150%;
-}
-
-.expo4 {
-    background-image: url('exposicio1/img4.jpg');
-    background-repeat: no-repeat;
-    background-size: 150%;
-}
-
-.expo5 {
-    background-image: url('exposicio1/img5.jpg');
-    background-repeat: no-repeat;
-    background-size: 150%;
-}
-
-.expo6 {
-    background-image: url('exposicio1/img6.jpg');
-    background-repeat: no-repeat;
-    background-size: 150%;
-}
-.expo7 {
-    background-image: url('exposicio1/img7.jpeg');
-    background-repeat: no-repeat;
-    background-size: 150%;
-}
-.expo8 {
-    background-image: url('exposicio1/img8.jpg');
-    background-repeat: no-repeat;
-    background-size: 150%;
-}
-.expo9 {
-    background-image: url('exposicio1/img9.jpg');
-    background-repeat: no-repeat;
-    background-size: 150%;
-}
 .moti {
     background: transparent;
     margin: o auto;
@@ -328,7 +282,6 @@ body {
     .foto{
         height: 250px;
         margin: 0 auto;
-        background-image: url(imgexpos/expo1.jpg);
         background-size: 100%;
         background-position: 0px 0px;
     }
@@ -351,8 +304,8 @@ body {
         height: 70px;
         margin: 0px 0px;
         border-radius: 10px;
-        background-size: 120%;
-        background-position: -8px -8px;
+        background-size: 100%;
+        background-position: 0px 6px;
         background-repeat: no-repeat;
     }
     
@@ -433,54 +386,7 @@ body {
     }
     
     .expo1 {
-        background-image: url('exposicio1/img1.jpg');
-        background-repeat: no-repeat;
-        background-size: 150%;
-    }
-    
-    .expo2 {
-        background-image: url('exposicio1/img2.jpg');
-        background-repeat: no-repeat;
-        background-size: 150%;
-    }
-    
-    .expo3 {
-        background-image: url('exposicio1/img3.jpg');
-        background-repeat: no-repeat;
-        background-size: 150%;
-    }
-    
-    .expo4 {
-        background-image: url('exposicio1/img4.jpg');
-        background-repeat: no-repeat;
-        background-size: 150%;
-    }
-    
-    .expo5 {
-        background-image: url('exposicio1/img5.jpg');
-        background-repeat: no-repeat;
-        background-size: 150%;
-    }
-    
-    .expo6 {
-        background-image: url('exposicio1/img6.jpg');
-        background-repeat: no-repeat;
-        background-size: 150%;
-    }
-    .expo7 {
-        background-image: url('exposicio1/img7.jpeg');
-        background-repeat: no-repeat;
-        background-size: 150%;
-    }
-    .expo8 {
-        background-image: url('exposicio1/img8.jpg');
-        background-repeat: no-repeat;
-        background-size: 150%;
-    }
-    .expo9 {
-        background-image: url('exposicio1/img9.jpg');
-        background-repeat: no-repeat;
-        background-size: 150%;
+        background-image: url('../fotosart/expo1.jpeg');
     }
 
     

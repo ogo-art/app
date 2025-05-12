@@ -38,7 +38,7 @@ body {
     max-width: 960px;
     height: 350px;
     margin: 0 auto;
-    background-image: url(imgexpos/expo1.jpg);
+    background-image: url(../../interface/dentroexpoo/imgexpos/expo1.jpg);
     background-size: 100%;
     background-position: 0px -80px;
     background-repeat: no-repeat;
@@ -71,7 +71,7 @@ body {
     height: 100px;
     margin: 0px 0px;
     border-radius: 15px;
-    background-image: url(imgexpos/logo1.jpg);
+    background-image: url(../../interface/dentroexpoo/imgexpos/logo1.jpg);
     background-size: 120%;
     background-position: -10px -10px;
     background-repeat: no-repeat;

@@ -40,8 +40,13 @@ h1 {
     font-size: 2rem;
     font-family: 'Lori Bold';
     color: black;
-    margin-top: 20px;
+    padding-top: 15px;
     margin: 0 auto;
+    padding-left: 10px;
+}
+
+a {
+    text-decoration: none;
 }
 
 .expos {
@@ -50,7 +55,8 @@ h1 {
     height: 350px;
     background: blue;
     border-radius: 30px;
-    margin:  0 auto 10px auto;
+    margin:  0 auto;
+    margin-bottom: 10px;
     top: 10px;
 }
 
@@ -210,55 +216,84 @@ h2 {
 
 .perfil {
     opacity: 0.5;
-    background: transparent;
+    background: blue;
     width: 40px;
     height:40px;
     margin: 20px 5%;
+    border-radius: 8px;
     float: left;
-    background-image: url(../../img/perfil.png);
-    background-size: contain;  
+    background-image: url(../../img/perfilapp.jpg);
+    background-size: 120%;  
     background-repeat: no-repeat;
-    background-position: 0px 0px;
+    background-position: -4px -4px;
 }
 
 .perfil:hover {
     opacity: 1;
 }
 
+/* EXPOS */
+
+.expo1 {
+    background-image: url(../../interface/dentroexpoo/imgexpos/expo1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.expo2 {
+    background-image: url(../../interface/dentroexpoo/imgexpos/expo2.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.expo3 {
+    background-image: url(../../interface/dentroexpoo/imgexpos/expo3.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.expo4 {
+    background-image: url(../../interface/dentroexpoo/imgexpos/expo4.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.expo5 {
+    background-image: url(../../interface/dentroexpoo/imgexpos/expo5.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.expo6 {
+    background-image: url(../../interface/dentroexpoo/imgexpos/expo6.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.expo7 {
+    background-image: url(../../interface/dentroexpoo/imgexpos/expo7.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
 @media screen and (max-width: 480px){
 
-    .buscador {
-        max-width: 420px;
-        height: 20px;
-    }
-    
-    .buscar{
-        width: 90%;
-        height: 25px;
-        box-sizing: border-box;
-    }
-    
-    .enter{
-        width: 10%;
-        height: 25px;
-    }
-    
-    .enter h1 {
-        font-size: 1.1rem;
-        bottom: 9px;
-    }
-    
+
     h1 {
-        max-width: 420px;
+        width: 98%;
         font-size: 1.8rem;
         margin-top: 10px;
+        padding-top: 9px;
     }
 
     .expos {
-        width: 100%;
-        max-width: 420px;
+        width: 98%;
         height: 200px;
         border-radius: 20px;
+
+        margin:  0 auto;
+        margin-bottom: 10px;
+        top: 10px;
     }
     
     .etiqueta{
@@ -294,8 +329,6 @@ h2 {
         margin-top: 10px;
     }
     
- 
-
     .container {
         width: 100%;
         max-width: 420px;
@@ -304,6 +337,7 @@ h2 {
         padding-bottom: 90px;
     }
 
+    /* NAVEGACIÓ*/
     .nave{
         background: #591662;
         width: 100%;
@@ -313,16 +347,34 @@ h2 {
         display: flex;
     }
 
-    .home, .exposi, .subasta, .perfil {
-        width: 600px;
-        height: 600px;
-        margin: 10px 10px;
+    .home {
+        width: 40px;
+        height:40px;
+        margin: 14px 20px 0px 20px;
+    }
+
+    .exposi {
+        width: 40px;
+        height: 40px;
+        margin: 14px 20px 0px 20px;
     }
 
     .subir {
-        width: 700px;
-        height: 700px;
-        margin: 5px 50px;
+        width: 55px;
+        height:55px;
+        margin: 6px 20px 0px 20px;
+    }
+
+    .subasta {
+        width: 40px;
+        height:40px;
+        margin: 14px 20px 0px 20px;
+    }
+
+    .perfil {
+        width: 40px;
+        height:40px;
+        margin: 14px 20px 0px 20px;
     }
 }
 
