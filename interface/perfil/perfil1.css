@@ -1,224 +1,177 @@
-/* Reset global */
+@font-face {
+    font-family: 'Lori Bold';
+    src: url('../../fonts/LoriBold.woff2') format('woff2'),
+        url('../../fonts/LoriBold.woff') format('woff'),
+        url('../../fonts/LoriBold.ttf') format('truetype'),
+        url('../../fonts/LoriBold.svg') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lori Medium';
+    src: url('../../fonts/LoriMedium.woff2') format('woff2'),
+        url('../../fonts/LoriMedium.woff') format('woff'),
+        url('../../fonts/LoriMedium.ttf') format('truetype'),
+        url('../../fonts/LoriMedium.svg') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+    font-family: 'Lori Bold';
+  }
+  
 
-/* Diseño general del body */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f7f7f7;
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    min-height: 100vh;
     padding: 20px;
-}
-
-/* Contenedor principal del perfil */
-.perfil-container {
+  }
+  
+  .perfil-container {
     background-color: #fff;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     width: 100%;
     max-width: 960px;
-    margin-bottom: 100px;
-}
-
-/* Estilo para la sección de foto y datos */
-.perfil-info {
+    margin-bottom: 120px;
+  }
+  
+  .perfil-info {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-}
-
-/* Cuadrado de perfil */
-.perfil-img {
+  }
+  
+  .perfil-img {
     width: 120px;
     height: 120px;
-    border-radius: 10px;
-    background-color: #3498db;
-    border: 3px solid #3498db;
-    margin-right: 20px;
+    border-radius: 15px;
+    margin-right: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.perfil-img-cuadrado {
+  }
+  
+  .perfil-img-cuadrado {
     width: 100%;
     height: 100%;
-    border-radius: 10px;
-    background-color: #3498db;
-}
-
-/* Detalles del perfil */
-.perfil-details {
+    border-radius: 15px;
+    background-image: url(../../img/perfilapp.jpg);
+    background-size: 100%;
+  }
+  
+  .perfil-details {
     display: flex;
     flex-direction: column;
     gap: 10px;
-}
-
-.perfil-details h2 {
-    font-size: 1.8rem;
-    font-weight: bold;
+  }
+  
+  .perfil-details h2 {
+    font-size: 2rem;
     color: #333;
-}
-
-.perfil-details .ubicacion {
+  }
+  
+  .perfil-details .ubicacion {
     font-size: 1rem;
-    color: #888;
-}
-
-.perfil-details .descripcion {
+    color: #777;
+  }
+  
+  .perfil-details .descripcion {
     font-size: 1rem;
     color: #555;
-    margin-bottom: 15px;
-}
-
-/* Estadísticas */
-.stats {
+    max-width: 600px;
+  }
+  
+  /* Aquí centramos los stats horizontalmente sin tocar navegación */
+  .stats {
     display: flex;
-    justify-content: space-between;
-    gap: 40px;
+    gap: 30px;
     font-size: 1rem;
     color: #333;
-}
-
-.stats p {
+    margin-top: 10px;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center;
+  }
+  
+  .stats p {
+    font-weight: bold;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    font-weight: bold;
-}
-
-.stats p span {
+  }
+  
+  .stats p span {
+    display: block;
     font-weight: normal;
-    font-size: 0.9rem;
     color: #666;
-}
-
-/* Botones de acción */
-.acciones {
-    display: flex;
-    gap: 10px;
-}
-
-.acciones button {
-    padding: 10px 25px;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    font-size: 1rem;
-}
-
-.seguir-btn {
-    background-color: #3498db;
-    color: white;
-}
-
-.seguir-btn:hover {
-    background-color: #2980b9;
-}
-
-/* Tabs */
-.tabs {
+    font-size: 0.9rem;
+  }
+  
+  .tabs {
     display: flex;
     gap: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.tab {
+    margin: 20px 0;
+  }
+  
+  .tab {
     padding: 10px 20px;
     cursor: pointer;
     font-size: 1rem;
-    text-align: center;
-    opacity: 0.5;
-    transition: opacity 0.3s, border-bottom 0.3s;
-}
-
-.tab:hover {
-    opacity: 1;
-}
-
-#publicaciones-tab,
-#sobre-mi-tab {
     border-bottom: 2px solid transparent;
-}
-
-#publicaciones-tab.active,
-#sobre-mi-tab.active {
+    opacity: 0.6;
+    transition: 0.3s;
+  }
+  
+  .tab.active {
     opacity: 1;
-    border-bottom: 2px solid #3498db;
-}
-
-/* Contenedor de pestañas */
-.tab-content-wrapper {
-    min-height: 500px;
-    position: relative;
-}
-
-/* Contenido de tabs */
-.tab-content {
-    display: none;
-}
-
-.tab-content.active {
-    display: block;
-}
-
-/* Sección "Sobre mí" */
-.sobre-mi {
-    margin-top: 30px;
-    background-color: #f9f9f9;
-    padding: 15px;
-    border-radius: 8px;
-}
-
-.sobre-mi h3 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.sobre-mi p {
-    font-size: 1rem;
-    color: #555;
-}
-
-/* Publicaciones */
-.publicaciones h3 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 15px;
-}
-
-.galeria {
+    border-bottom: 2px solid #5e2b86;
+  }
+  
+  .galeria {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
-}
-
-.publicacion {
-    background-color: #f4f4f4;
+  }
+  
+  .publicacion {
+    background-color: #eee;
+    height: 400px;
     width: 100%;
-    padding-top: 100%;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding-top: 50%;
+    border-radius: 12px;
     background-size: cover;
     background-position: center;
-    position: relative;
-}
-
-/* Barra de navegación */
-.nave {
+  }
+  
+  .sobre-mi {
+    margin-top: 20px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 12px;
+  }
+  
+  .sobre-mi h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .sobre-mi p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /*Navegacion*/
+  .nave{
     background: #591662;
     width: 100%;
     max-width: 960px;
@@ -227,7 +180,6 @@ body {
     left: 50%;
     transform: translateX(-50%);
     position: fixed;
-    z-index: 1000;
     justify-content: center;
     display: flex;
   }
@@ -236,11 +188,11 @@ body {
     opacity: 0.5;
     background: transparent;
     width: 40px;
-    height: 40px;
+    height:40px;
     margin: 20px 5%;
     float: left;
     background-image: url(../../img/home.png);
-    background-size: contain;
+    background-size: contain;  
     background-repeat: no-repeat;
     background-position: 0px 0px;
   }
@@ -257,24 +209,20 @@ body {
     margin: 20px 5%;
     float: left;
     background-image: url(../../img/expo.png);
-    background-size: contain;
+    background-size: contain;  
     background-repeat: no-repeat;
     background-position: 0px 0px;
-  }
-  
-  .exposi:hover {
-    opacity: 1;
   }
   
   .subir {
     opacity: 0.5;
     background: transparent;
     width: 70px;
-    height: 70px;
+    height:70px;
     margin: 5px 50px;
     float: left;
     background-image: url(../../img/subir.png);
-    background-size: contain;
+    background-size: contain;  
     background-repeat: no-repeat;
     background-position: 0px 0px;
   }
@@ -287,11 +235,11 @@ body {
     opacity: 0.5;
     background: transparent;
     width: 40px;
-    height: 40px;
+    height:40px;
     margin: 20px 5%;
     float: left;
     background-image: url(../../img/subasta.png);
-    background-size: contain;
+    background-size: contain;  
     background-repeat: no-repeat;
     background-position: 3px 0px;
   }
@@ -300,6 +248,7 @@ body {
     opacity: 1;
   }
   
+
   .perfil {
     opacity: 1;
     background: blue;
@@ -314,70 +263,76 @@ body {
     background-position: -4px -4px;
 }
 
-/* Responsive */
-@media screen and (max-width: 768px) {
+  
+  @media screen and (max-width: 768px) {
     .perfil-info {
-        flex-direction: column;
-        text-align: center;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
     }
-
+  
+    .galeria {
+      grid-template-columns: 1fr;
+    }
+  
     .perfil-img {
-        width: 100px;
-        height: 100px;
+      margin-bottom: 15px;
     }
 
-    .stats {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .galeria {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media screen and (max-width: 440px) {
-    .galeria {
-        grid-template-columns: 1fr;
-    }
-
-    /* NAVEGACIÓ*/
-    .nave{
-        background: #591662;
+    .publicacion {
+        background-color: #eee;
+        height: 300px;
         width: 100%;
-        height: 65px;
-        position: fixed;
-        justify-content: center;
-        display: flex;
+        padding-top: 50%;
+        border-radius: 12px;
+        background-size: cover;
+        background-position: center;
+      }
+  
+    /* No modifico nada de .nave ni hijos */
+    
+    .info-container {
+      font-size: 1rem;
+      height: 80px;
     }
-
-    .home {
+      /* NAVEGACIÓ*/
+      .nave{
+          background: #591662;
+          width: 100%;
+          height: 65px;
+          position: fixed;
+          justify-content: center;
+          display: flex;
+      }
+  
+      .home {
+          width: 40px;
+          height:40px;
+          margin: 14px 20px 0px 20px;
+      }
+      
+      .exposi {
+          width: 40px;
+          height: 40px;
+          margin: 14px 20px 0px 20px;
+      }
+      
+      .subir {
+          width: 55px;
+          height:55px;
+          margin: 6px 20px 0px 20px;
+      }
+      
+      .subasta {
+          width: 40px;
+          height:40px;
+          margin: 14px 20px 0px 20px;
+      }
+      
+      .perfil {
         width: 40px;
         height:40px;
         margin: 14px 20px 0px 20px;
     }
-    
-    .exposi {
-        width: 40px;
-        height: 40px;
-        margin: 14px 20px 0px 20px;
-    }
-    
-    .subir {
-        width: 55px;
-        height:55px;
-        margin: 6px 20px 0px 20px;
-    }
-    
-    .subasta {
-        width: 40px;
-        height:40px;
-        margin: 14px 20px 0px 20px;
-    }
-    
-    .perfil {
-        width: 40px;
-        height:40px;
-        margin: 14px 20px 0px 20px;
-    }
-}
+  }
+  

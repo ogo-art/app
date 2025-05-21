@@ -1,0 +1,492 @@
+@font-face {
+    font-family: 'Lori Bold';
+    src: url('../../fonts/LoriBold.woff2') format('woff2'),
+        url('../../fonts/LoriBold.woff') format('woff'),
+        url('../../fonts/LoriBold.ttf') format('truetype'),
+        url('../../fonts/LoriBold.svg') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lori Medium';
+    src: url('../../fonts/LoriMedium.woff2') format('woff2'),
+        url('../../fonts/LoriMedium.woff') format('woff'),
+        url('../../fonts/LoriMedium.ttf') format('truetype'),
+        url('../../fonts/LoriMedium.svg') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+*{
+    margin: 0 auto;
+}
+
+body {
+    background: transparent;
+}
+
+h1 {
+    background: transparent;
+    width: 100%;
+    max-width: 960px;
+    font-size: 2rem;
+    font-family: 'Lori Bold';
+    color: black;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.raya {
+    width: 100%;
+    max-width: 960px;
+    height: 1px;
+    background: grey;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.sub{
+    background: transparent;
+    width: 95%;
+    max-width: 960px;
+    height: 160px;
+}
+
+.foto1 {
+    background: blueviolet;
+    width: 20%;
+    height: 140px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    
+    background-image: url(art/sub1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.foto2 {
+    background: blueviolet;
+    width: 20%;
+    height: 140px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    
+    background-image: url(art/sub2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.foto3 {
+    background: blueviolet;
+    width: 20%;
+    height: 140px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    
+    background-image: url(art/sub3.webp);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.foto4 {
+    background: blueviolet;
+    width: 20%;
+    height: 140px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    
+    background-image: url(art/sub4.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.foto5 {
+    background: blueviolet;
+    width: 20%;
+    height: 140px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    
+    background-image: url(art/sub5.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.foto6 {
+    background: blueviolet;
+    width: 20%;
+    height: 140px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    
+    background-image: url(art/sub6.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.foto7 {
+    background: blueviolet;
+    width: 20%;
+    height: 140px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    
+    background-image: url(art/sub7.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+h2 {
+    background: transparent;
+    padding-top: 16px;
+    overflow: hidden;
+    padding-left: 20px;
+    font-family: 'Lori Bold';
+    font-size: 1.8rem;
+}
+
+h3 {
+    background: transparent;
+    overflow: hidden;
+    padding-left: 20px;
+    margin-top: 2px;
+    font-family: 'Lori Medium';
+    font-size: 1.3rem;
+}
+
+h4 {
+    background: transparent;
+    text-align: right;
+    width: 200px;
+    overflow: hidden;
+    padding-left: 500px;
+    padding-top: 40px;
+    margin-top: 2px;
+    font-family: 'Lori Medium';
+    font-size: 1.2rem;
+    color: grey;
+}
+
+/* NAV */
+
+.nave{
+    background: #591662;
+    width: 100%;
+    max-width: 960px;
+    height: 80px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: fixed;
+    justify-content: center;
+    display: flex;
+}
+
+.home {
+    opacity: 0.5;
+    background: transparent;
+    width: 40px;
+    height:40px;
+    margin: 20px 5%;
+    float: left;
+    background-image: url(../../img/home.png);
+    background-size: contain;  
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+}
+
+.home:hover {
+    opacity: 1;
+}
+
+.exposi {
+    opacity: 0.5;
+    background: transparent;
+    width: 40px;
+    height: 40px;
+    margin: 20px 5%;
+    float: left;
+    background-image: url(../../img/expo.png);
+    background-size: contain;  
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+}
+
+.exposi:hover {
+    opacity: 1;
+}
+
+.subir {
+    opacity: 0.5;
+    background: transparent;
+    width: 70px;
+    height:70px;
+    margin: 5px 50px;
+    float: left;
+    background-image: url(../../img/subir.png);
+    background-size: contain;  
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+}
+
+.subir:hover {
+    opacity: 1;
+}
+
+.subasta {
+    opacity: 1;
+    background: transparent;
+    width: 40px;
+    height:40px;
+    margin: 20px 5%;
+    float: left;
+    background-image: url(../../img/subasta.png);
+    background-size: contain;  
+    background-repeat: no-repeat;
+    background-position: 3px 0px;
+}
+
+.perfil {
+    opacity: 0.5;
+    background: blue;
+    width: 40px;
+    height:40px;
+    margin: 20px 5%;
+    border-radius: 8px;
+    float: left;
+    background-image: url(../../interface/dentroexpoo/imgexpos/logo1.jpg);
+    background-size: 120%;  
+    background-repeat: no-repeat;
+    background-position: -4px -4px;
+}
+
+.perfil:hover {
+    opacity: 1;
+}
+
+.correct{
+    width: 100%;
+    max-width: 960px;
+    height: 90px;
+    background: transparent;
+}
+
+
+
+
+@media screen and (max-width: 480px){
+    /*aqui va el disseny smartphone*/
+
+
+    h1 {
+        font-size: 2rem;
+        padding-top: 15px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .raya {
+        height: 0.5px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+    
+    .sub{
+        height: 120px;
+    }
+    
+    .foto1 {
+        background: blueviolet;
+        width: 30%;
+        height: 100px;
+        float: left;
+        margin-top: 10px;
+        margin-left: 3px;
+        border-radius: 6px;
+        
+        background-image: url(art/sub1.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .foto2 {
+        background: blueviolet;
+        width: 30%;
+        height: 100px;
+        float: left;
+        margin-top: 10px;
+        margin-left: 3px;
+        border-radius: 6px;
+        
+        background-image: url(art/sub2.jpg);
+        background-size: 110%;
+        background-repeat: no-repeat;
+    }
+
+    .foto3 {
+        background: blueviolet;
+        width: 30%;
+        height: 100px;
+        float: left;
+        margin-top: 10px;
+        margin-left: 3px;
+        border-radius: 6px;
+        
+        background-image: url(art/sub3.webp);
+        background-size: 110%;
+        background-repeat: no-repeat;
+    }
+
+    .foto4 {
+        background: blueviolet;
+        width: 30%;
+        height: 100px;
+        float: left;
+        margin-top: 10px;
+        margin-left: 3px;
+        border-radius: 6px;
+        
+        background-image: url(art/sub4.jpg);
+        background-size: 110%;
+        background-repeat: no-repeat;
+    }
+
+    .foto5 {
+        background: blueviolet;
+        width: 30%;
+        height: 100px;
+        float: left;
+        margin-top: 10px;
+        margin-left: 3px;
+        border-radius: 6px;
+        
+        background-image: url(art/sub5.jpg);
+        background-size: 110%;
+        background-repeat: no-repeat;
+    }
+
+    .foto6 {
+        background: blueviolet;
+        width: 30%;
+        height: 100px;
+        float: left;
+        margin-top: 10px;
+        margin-left: 3px;
+        border-radius: 6px;
+        
+        background-image: url(art/sub6.png);
+        background-size: 150%;
+        background-repeat: no-repeat;
+    }
+
+    .foto7 {
+        background: blueviolet;
+        width: 30%;
+        height: 100px;
+        float: left;
+        margin-top: 10px;
+        margin-left: 3px;
+        border-radius: 6px;
+        
+        background-image: url(art/sub7.jpg);
+        background-size: 110%;
+        background-repeat: no-repeat;
+    }
+    
+    h2 {
+        background: transparent;
+        padding-top: 10px;
+        overflow: hidden;
+        padding-left: 20px;
+        font-family: 'Lori Bold';
+        font-size: 1.4rem;
+    }
+    
+    h3 {
+        background: transparent;
+        overflow: hidden;
+        padding-left: 20px;
+        margin-top: 2px;
+        font-family: 'Lori Medium';
+        font-size: 1rem;
+    }
+    
+    h4 {
+        background: transparent;
+        text-align: right;
+        width: 200px;
+        overflow: hidden;
+        padding-left: 80px;
+        padding-top: 15px;
+        margin-top: 2px;
+        font-family: 'Lori Medium';
+        font-size: 1rem;
+        color: grey;
+    }
+
+    .correct{
+        width: 100%;
+        height: 70px;
+        background: transparent;
+    }
+
+ /* NAVEGACIÓ*/
+
+    .nave{
+        background: #591662;
+        width: 100%;
+        height: 65px;
+        position: fixed;
+        justify-content: center;
+        display: flex;
+    }
+
+    .home {
+        width: 40px;
+        height:40px;
+        margin: 14px 20px 0px 20px;
+    }
+    
+    .exposi {
+        width: 40px;
+        height: 40px;
+        margin: 14px 20px 0px 20px;
+    }
+    
+    .subir {
+        width: 55px;
+        height:55px;
+        margin: 6px 20px 0px 20px;
+    }
+    
+    .subasta {
+        width: 40px;
+        height:40px;
+        margin: 14px 20px 0px 20px;
+    }
+    
+    .perfil {
+        width: 40px;
+        height:40px;
+        margin: 14px 20px 0px 20px;
+    }
+
+    }

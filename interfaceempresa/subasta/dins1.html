@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OGO</title>
+    <link rel="stylesheet" href="dins1.css">
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chat-header">
+      <button class="back-button" onclick="goBack()">Torna</button>
+      <span>Subhasta en Directe - Llavis</span>
+    </div>
+    <img class="art-image" src="art/sub1.jpg" alt="Imatge de l'obra d'art">
+    <div class="chat-messages" id="chat">
+      <div class="message received">
+        Subhasta iniciada. Preu inicial: 1.000€
+      </div>
+      <div class="message sent">
+        Proposo 1.500€
+      </div>
+      <div class="message received">
+        Nova proposta: 2.000€
+      </div>
+    </div>
+    <div class="chat-input">
+      <input type="text" id="messageInput" placeholder="Escriu la teva proposta..." />
+      <button onclick="sendMessage()">Envia</button>
+    </div>
+  </div>
+
+  <script>
+    function sendMessage() {
+      const input = document.getElementById('messageInput');
+      const message = input.value.trim();
+      if (message === '') return;
+
+      const messageContainer = document.createElement('div');
+      messageContainer.classList.add('message', 'sent');
+      messageContainer.textContent = message;
+
+      document.getElementById('chat').appendChild(messageContainer);
+
+      input.value = '';
+      document.getElementById('chat').scrollTop = document.getElementById('chat').scrollHeight;
+    }
+
+    function goBack() {
+      window.location.href = 'subasta.html';
+    }
+  </script>
+</body>
+</html>

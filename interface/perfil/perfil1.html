@@ -8,88 +8,79 @@
 </head>
 <body>
 
-    <!-- Barra de navegación -->
-    <div class="nave">
-        <a href="../home.html" class="home"></a>
-        <a href="../expos/principal.html" class="exposi"></a>
-        <a href="../subir/subir.html" class="subir"></a>
-        <a href="../subasta/subasta.html" class="subasta"></a>
-        <a href="../perfil/perfil1.html" class="perfil"></a>
+     <!-- Barra de navegación -->
+  <div class="nave">
+    <a href="../home.html" class="home"></a>
+    <a href="../expos/principal.html" class="exposi"></a>
+    <a href="../subir/subir.html" class="subir"></a>
+    <a href="../subasta/subasta.html" class="subasta"></a>
+    <a href="../perfil/perfil1.html" class="perfil"></a>
+</div>
+
+  <!-- Contenedor principal -->
+  <div class="perfil-container">
+    <!-- Información principal -->
+    <div class="perfil-info">
+      <div class="perfil-img">
+        <div class="perfil-img-cuadrado"></div>
+      </div>
+      <div class="perfil-details">
+        <h2>Núria Claus</h2>
+        <p class="ubicacion">Barcelona, España</p>
+        <div class="stats">
+          <p>1.000<span>Seguidors</span></p>
+          <p>123<span>Seguint</span></p>
+        </div>
+      </div>
     </div>
 
-    <!-- Contenedor principal del perfil -->
-    <div class="perfil-container">
-        <!-- Foto de perfil y detalles -->
-        <div class="perfil-info">
-            <div class="perfil-img">
-                <!-- Cuadrado con borde en lugar de imagen -->
-                <div class="perfil-img-cuadrado"></div>
-            </div>
-            <div class="perfil-details">
-                <h2>Núria Velt</h2>
-                <p class="ubicacion">Lleida</p>
-                <div class="stats">
-                    <p>123<span>Seguidores</span></p>
-                    <p>4<span>Publicaciones</span></p>
-                </div>
-                <div class="acciones">
-                    <button class="seguir-btn">Seguir</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Tabs de Publicaciones y Sobre mí -->
-        <div class="tabs">
-            <div class="tab" id="publicaciones-tab" onclick="toggleTab('publicaciones')">Publicaciones</div>
-            <div class="tab" id="sobre-mi-tab" onclick="toggleTab('sobre-mi')">Sobre mí</div>
-        </div>
-
-        <!-- Contenido de las Tabs -->
-        <div class="tab-content" id="publicaciones">
-            <div class="galeria">
-                <div class="publicacion"></div>
-                <div class="publicacion"></div>
-                <div class="publicacion"></div>
-                <div class="publicacion"></div>
-                <div class="publicacion"></div>
-                <div class="publicacion"></div>
-                <div class="publicacion"></div>
-                <div class="publicacion"></div>
-            </div>
-        </div>
-
-        <div class="tab-content" id="sobre-mi" style="display: none;">
-            <div class="sobre-mi">
-                <h3>Sobre mí</h3>
-                <p>Este es el texto sobre mí.</p>
-            </div>
-        </div>
+    <!-- Tabs -->
+    <div class="tabs">
+      <div class="tab active" id="exposiciones-tab" onclick="toggleTab('exposiciones')">Obres</div>
+      <div class="tab" id="sobre-tab" onclick="toggleTab('sobre')">Sobre mi</div>
     </div>
 
-    <script>
-        function toggleTab(tab) {
-            const publicaciones = document.getElementById('publicaciones');
-            const sobreMi = document.getElementById('sobre-mi');
-            const publicacionesTab = document.getElementById('publicaciones-tab');
-            const sobreMiTab = document.getElementById('sobre-mi-tab');
+    <!-- Contenidos -->
+    <div class="tab-content" id="exposiciones">
+      <div class="galeria">
+        <div class="publicacion" style="background-image: url(fotosperfil/f1.webp);"></div>
+        <div class="publicacion" style="background-image: url(fotosperfil/f2.jpg);"></div>
+        <div class="publicacion" style="background-image: url(fotosperfil/f3.405);"></div>
+        <div class="publicacion" style="background-image: url(fotosperfil/f4.png);"></div>
+        <div class="publicacion" style="background-image: url(fotosperfil/f5.jpg);"></div>
+        <div class="publicacion" style="background-image: url(fotosperfil/f6.jpg);"></div>
+      </div>
+    </div>
 
-            if (tab === 'publicaciones') {
-                publicaciones.style.display = 'block';
-                sobreMi.style.display = 'none';
-                publicacionesTab.style.opacity = '1';
-                sobreMiTab.style.opacity = '0.5';
-                publicacionesTab.style.borderBottom = '2px solid #3498db';
-                sobreMiTab.style.borderBottom = 'none';
-            } else {
-                publicaciones.style.display = 'none';
-                sobreMi.style.display = 'block';
-                publicacionesTab.style.opacity = '0.5';
-                sobreMiTab.style.opacity = '1';
-                publicacionesTab.style.borderBottom = 'none';
-                sobreMiTab.style.borderBottom = '2px solid #3498db';
-            }
-        }
-    </script>
+    <div class="tab-content" id="sobre" style="display: none;">
+      <div class="sobre-mi">
+        <h3>Sobre Núria</h3>
+        <p>
+            Des de ben petita, l’art ha estat la meva manera d’entendre i sentir el món. M’encanta dibuixar, pintar i perdre’m en museus, on cada obra em parla d’una manera diferent. Per a mi, l’art no és només una afició, és una necessitat: una forma d’expressar el que sento quan les paraules no són suficients. Somio a poder dedicar-m’hi tota la vida i compartir el que veig i sento a través del que creo.        </p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleTab(tab) {
+      const exposiciones = document.getElementById('exposiciones');
+      const sobre = document.getElementById('sobre');
+      const exposTab = document.getElementById('exposiciones-tab');
+      const sobreTab = document.getElementById('sobre-tab');
+
+      if (tab === 'exposiciones') {
+        exposiciones.style.display = 'block';
+        sobre.style.display = 'none';
+        exposTab.classList.add('active');
+        sobreTab.classList.remove('active');
+      } else {
+        exposiciones.style.display = 'none';
+        sobre.style.display = 'block';
+        exposTab.classList.remove('active');
+        sobreTab.classList.add('active');
+      }
+    }
+  </script>
 
 </body>
 </html>
