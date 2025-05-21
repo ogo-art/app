@@ -483,7 +483,7 @@ h2 {
     }
 
     .container {
-        background: red;
+        background: transparent;
         width: 100%;
         max-width: 460px;
         height: fit-content;
@@ -502,6 +502,50 @@ h2 {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+    }
+
+    .expo1 {
+        background-image: url('imageneshome/obra1.jpg');
+        background-repeat: no-repeat;
+        background-size: 140%;
+    }
+    
+    .expo2 {
+        background-image: url('imageneshome/obra2.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    
+    .expo3 {
+        background-image: url('../fotosart/pexels-ibrahim-magdy-art-462553637-15711409.jpg');
+    }
+    
+    .expo4 {
+        background-image: url('../fotosart/expo1.jpeg');
+    }
+    
+    .expo5 {
+        background-image: url('../fotosart/expo1.jpeg');
+    }
+    
+    .expo6 {
+        background-image: url('../fotosart/expo1.jpeg');
+    }
+    
+    .expo7 {
+        background-image: url('../fotosart/expo1.jpeg');
+    }
+    
+    .expo8 {
+        background-image: url('../fotosart/expo1.jpeg');
+    }
+    
+    .expo9 {
+        background-image: url('../fotosart/expo1.jpeg');
+    }
+    
+    .expo10 {
+        background-image: url('../fotosart/expo1.jpeg');
     }
 
     .guardar {

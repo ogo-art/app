@@ -10,61 +10,56 @@
 
   <!-- Encabezado de la Expo -->
   <header>
-    <div class="portada" id="portada">
-      <input type="file" id="portadaInput" accept="image/*" />
-      <div class="menu" id="menuPortada">
-        <span>⋮</span>
-        <div class="menu-options">
-          <button id="cambiarPortada">Cambiar portada</button>
-        </div>
+    <div class="menu" id="menuPortada">
+      <span>⋮</span>
+      <div class="menu-options" id="menuOpciones">
+        <button id="cambiarPortada">Editar imatge</button>
       </div>
     </div>
-    <h1>🖼️ Crea tu Expo</h1>
+
+    <div id="portada">
+      <img src="../../interface/dentroexpoo/imgexpos/expo1.jpg" alt="Crea tu Expo" class="titulo-imagen" />
+    </div>
+
+    <input type="file" id="portadaInput" accept="image/*" style="display: none;" />
   </header>
 
+  <!-- Formulario principal -->
   <main class="formulario">
     <form id="expoForm">
-      <label for="titulo">Título de la obra</label>
-      <input type="text" id="titulo" required placeholder="Ej: Cielo Mágico" />
+      <label for="titulo">Títol de l'obra</label>
+      <input type="text" id="titulo" required placeholder="Ej: Cel màgic" />
 
-      <label for="descripcion">Descripción</label>
-      <textarea id="descripcion" rows="3" required placeholder="Describe tu obra..."></textarea>
+      <label for="descripcion">Descripció</label>
+      <textarea id="descripcion" rows="3" required placeholder="Descriula teva expo..."></textarea>
 
-      <label for="fechaInicio">Fecha de inicio</label>
+      <label for="fechaInicio">Data d'inici</label>
       <input type="date" id="fechaInicio" required />
 
-      <label for="fechaFin">Fecha de finalización</label>
+      <label for="fechaFin">Data fi</label>
       <input type="date" id="fechaFin" required />
 
-      <label for="ubicacion">Ubicación de la exposición</label>
-      <input type="text" id="ubicacion" placeholder="Ej: Museo de Arte Contemporáneo" required />
-
-      <label for="imagen">Subir imagen de la obra</label>
-      <input type="file" id="imagen" accept="image/*" required />
-
+      <label for="ubicacion">Ubicació de l'exposició</label>
+      <input type="text" id="ubicacion" placeholder="Ej: Museu d'Art Contemporani" required />
     </form>
 
     <section class="preview" id="preview"></section>
 
-    <!-- Botón adicional para seleccionar varias obras -->
-    <div class="extra-options">
-      <button id="seleccionarObras">Seleccionar otras obras</button>
+    <div class="extra-options botones-contenedor">
+      <a href="../seleccion de obras empresa/obras.html" class="boton-obras">Seleccionar les obres</a>
+      <button id="confirmarExpo" class="confirmar-btn">Confirmar Expo</button>
     </div>
   </main>
 
-  <script src="script.js"></script>
-</body>
-</html>
-
-
-
-  <!-- Barra de navegación -->
+  <!-- Navegación -->
   <div class="nave">
     <a href="../homempresa/homempresa.html" class="home"></a>
     <a href="../exposiciones/expoempresa.html" class="exposi"></a>
     <a href="../subirempresa/subirempresa.html" class="subir"></a>
     <a href="../subasta/subasta.html" class="subasta"></a>
     <a href="../perfilempresa/perfilempresa.html" class="perfil"></a>
-</div>
+  </div>
+
+  <script src="subirempresa.js"></script>
 </body>
 </html>

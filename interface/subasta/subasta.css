@@ -70,6 +70,90 @@ h1 {
     background-repeat: no-repeat;
 }
 
+.foto2 {
+    background: blueviolet;
+    width: 20%;
+    height: 140px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    
+    background-image: url(art/sub2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.foto3 {
+    background: blueviolet;
+    width: 20%;
+    height: 140px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    
+    background-image: url(art/sub3.webp);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.foto4 {
+    background: blueviolet;
+    width: 20%;
+    height: 140px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    
+    background-image: url(art/sub4.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.foto5 {
+    background: blueviolet;
+    width: 20%;
+    height: 140px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    
+    background-image: url(art/sub5.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.foto6 {
+    background: blueviolet;
+    width: 20%;
+    height: 140px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    
+    background-image: url(art/sub6.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.foto7 {
+    background: blueviolet;
+    width: 20%;
+    height: 140px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    
+    background-image: url(art/sub7.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
 h2 {
     background: transparent;
     padding-top: 16px;
@@ -242,6 +326,90 @@ h4 {
         background-size: 100%;
         background-repeat: no-repeat;
     }
+
+    .foto2 {
+        background: blueviolet;
+        width: 30%;
+        height: 100px;
+        float: left;
+        margin-top: 10px;
+        margin-left: 3px;
+        border-radius: 6px;
+        
+        background-image: url(art/sub2.jpg);
+        background-size: 110%;
+        background-repeat: no-repeat;
+    }
+
+    .foto3 {
+        background: blueviolet;
+        width: 30%;
+        height: 100px;
+        float: left;
+        margin-top: 10px;
+        margin-left: 3px;
+        border-radius: 6px;
+        
+        background-image: url(art/sub3.webp);
+        background-size: 110%;
+        background-repeat: no-repeat;
+    }
+
+    .foto4 {
+        background: blueviolet;
+        width: 30%;
+        height: 100px;
+        float: left;
+        margin-top: 10px;
+        margin-left: 3px;
+        border-radius: 6px;
+        
+        background-image: url(art/sub4.jpg);
+        background-size: 110%;
+        background-repeat: no-repeat;
+    }
+
+    .foto5 {
+        background: blueviolet;
+        width: 30%;
+        height: 100px;
+        float: left;
+        margin-top: 10px;
+        margin-left: 3px;
+        border-radius: 6px;
+        
+        background-image: url(art/sub5.jpg);
+        background-size: 110%;
+        background-repeat: no-repeat;
+    }
+
+    .foto6 {
+        background: blueviolet;
+        width: 30%;
+        height: 100px;
+        float: left;
+        margin-top: 10px;
+        margin-left: 3px;
+        border-radius: 6px;
+        
+        background-image: url(art/sub6.png);
+        background-size: 150%;
+        background-repeat: no-repeat;
+    }
+
+    .foto7 {
+        background: blueviolet;
+        width: 30%;
+        height: 100px;
+        float: left;
+        margin-top: 10px;
+        margin-left: 3px;
+        border-radius: 6px;
+        
+        background-image: url(art/sub7.jpg);
+        background-size: 110%;
+        background-repeat: no-repeat;
+    }
     
     h2 {
         background: transparent;
@@ -267,7 +435,7 @@ h4 {
         width: 200px;
         overflow: hidden;
         padding-left: 80px;
-        padding-top: 35px;
+        padding-top: 15px;
         margin-top: 2px;
         font-family: 'Lori Medium';
         font-size: 1rem;

@@ -152,10 +152,10 @@ body {
 
 .expo {
     background: grey;
-    width: 230px;
-    height: 230px;
+    width: 200px;
+    height: 200px;
     float: left;
-    margin: 4px 4px 4px 4px;
+    margin: 9px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

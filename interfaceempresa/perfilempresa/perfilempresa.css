@@ -1,295 +1,302 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f9f9f9;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-  }
-  
-  .perfil-container {
-    background-color: #fff;
-    padding: 25px;
-    border-radius: 20px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    width: 100%;
-    max-width: 960px;
-    margin-bottom: 120px;
-  }
-  
-  .perfil-info {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .perfil-img {
-    width: 120px;
-    height: 120px;
-    border-radius: 15px;
-    background-color: #5e2b86;
-    margin-right: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .perfil-img-cuadrado {
-    width: 100%;
-    height: 100%;
-    border-radius: 15px;
-    background-color: #5e2b86;
-  }
-  
-  .perfil-details {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  .perfil-details h2 {
-    font-size: 2rem;
-    color: #333;
-  }
-  
-  .perfil-details .ubicacion {
-    font-size: 1rem;
-    color: #777;
-  }
-  
-  .perfil-details .descripcion {
-    font-size: 1rem;
-    color: #555;
-    max-width: 600px;
-  }
-  
-  .stats {
-    display: flex;
-    gap: 30px;
-    font-size: 1rem;
-    color: #333;
-    margin-top: 10px;
-  }
-  
-  .stats p {
-    font-weight: bold;
-  }
-  
-  .stats p span {
-    display: block;
-    font-weight: normal;
-    color: #666;
-    font-size: 0.9rem;
-  }
-  
-  .tabs {
-    display: flex;
-    gap: 20px;
-    margin: 20px 0;
-  }
-  
-  .tab {
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 1rem;
-    border-bottom: 2px solid transparent;
-    opacity: 0.6;
-    transition: 0.3s;
-  }
-  
-  .tab.active {
-    opacity: 1;
-    border-bottom: 2px solid #5e2b86;
-  }
-  
-  .galeria {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-  }
-  
-  .publicacion {
-    background-color: #eee;
-    width: 100%;
-    padding-top: 50%;
-    border-radius: 12px;
-    background-size: cover;
-    background-position: center;
-  }
-  
-  .sobre-mi {
-    margin-top: 20px;
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 12px;
-  }
-  
-  .sobre-mi h3 {
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .sobre-mi p {
-    font-size: 1rem;
-    color: #555;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.perfil-container {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  width: 100%;
+  max-width: 960px;
+  margin-bottom: 120px;
+}
+
+.perfil-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.perfil-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 15px;
+  background-color: #5e2b86;
+  margin-right: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.perfil-img-cuadrado {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background-color: #5e2b86;
+}
+
+.perfil-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.perfil-details h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.perfil-details .ubicacion {
+  font-size: 1rem;
+  color: #777;
+}
+
+.perfil-details .descripcion {
+  font-size: 1rem;
+  color: #555;
+  max-width: 600px;
+}
+
+/* Aquí centramos los stats horizontalmente sin tocar navegación */
+.stats {
+  display: flex;
+  gap: 30px;
+  font-size: 1rem;
+  color: #333;
+  margin-top: 10px;
+  justify-content: center; /* Centrado horizontal */
+  align-items: center;
+}
+
+.stats p {
+  font-weight: bold;
+  text-align: center;
+}
+
+.stats p span {
+  display: block;
+  font-weight: normal;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.tabs {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  border-bottom: 2px solid transparent;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.tab.active {
+  opacity: 1;
+  border-bottom: 2px solid #5e2b86;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.publicacion {
+  background-color: #eee;
+  width: 100%;
+  padding-top: 50%;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+}
+
+.sobre-mi {
+  margin-top: 20px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.sobre-mi h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.sobre-mi p {
+  font-size: 1rem;
+  color: #555;
+}
 
 /*Navegacion*/
-  .nave{
-    background: #591662;
-    width: 100%;
-    max-width: 960px;
-    height: 80px;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    position: fixed;
-    justify-content: center;
-    display: flex;
+.nave{
+  background: #591662;
+  width: 100%;
+  max-width: 960px;
+  height: 80px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: fixed;
+  justify-content: center;
+  display: flex;
 }
 
 .home {
-    opacity: 1px;
-    background: transparent;
-    width: 40px;
-    height:40px;
-    margin: 20px 5%;
-    float: left;
-    background-image: url(../../img/home.png);
-    background-size: contain;  
-    background-repeat: no-repeat;
-    background-position: 0px 0px;
+  opacity: 0.5;
+  background: transparent;
+  width: 40px;
+  height:40px;
+  margin: 20px 5%;
+  float: left;
+  background-image: url(../../img/home.png);
+  background-size: contain;  
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
 }
 
 .home:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .exposi {
-    opacity: 1;
-    background: transparent;
-    width: 40px;
-    height: 40px;
-    margin: 20px 5%;
-    float: left;
-    background-image: url(../../img/expo.png);
-    background-size: contain;  
-    background-repeat: no-repeat;
-    background-position: 0px 0px;
+  opacity: 0.5;
+  background: transparent;
+  width: 40px;
+  height: 40px;
+  margin: 20px 5%;
+  float: left;
+  background-image: url(../../img/expo.png);
+  background-size: contain;  
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
 }
 
-
 .subir {
-    opacity: 0.5;
-    background: transparent;
-    width: 70px;
-    height:70px;
-    margin: 5px 50px;
-    float: left;
-    background-image: url(../../img/subir.png);
-    background-size: contain;  
-    background-repeat: no-repeat;
-    background-position: 0px 0px;
+  opacity: 0.5;
+  background: transparent;
+  width: 70px;
+  height:70px;
+  margin: 5px 50px;
+  float: left;
+  background-image: url(../../img/subir.png);
+  background-size: contain;  
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
 }
 
 .subir:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .subasta {
-    opacity: 0.5;
-    background: transparent;
-    width: 40px;
-    height:40px;
-    margin: 20px 5%;
-    float: left;
-    background-image: url(../../img/subasta.png);
-    background-size: contain;  
-    background-repeat: no-repeat;
-    background-position: 3px 0px;
+  opacity: 0.5;
+  background: transparent;
+  width: 40px;
+  height:40px;
+  margin: 20px 5%;
+  float: left;
+  background-image: url(../../img/subasta.png);
+  background-size: contain;  
+  background-repeat: no-repeat;
+  background-position: 3px 0px;
 }
 
 .subasta:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .perfil {
-    opacity: 0.5;
-    background: transparent;
-    width: 40px;
-    height:40px;
-    margin: 20px 5%;
-    float: left;
-    background-image: url(../../img/perfil.png);
-    background-size: contain;  
-    background-repeat: no-repeat;
-    background-position: 0px 0px;
+  opacity: 1;
+  background: transparent;
+  width: 40px;
+  height:40px;
+  margin: 20px 5%;
+  float: left;
+  background-image: url(../../interface/dentroexpoo/imgexpos/logo1.jpg);
+  background-size: contain;  
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
 }
 
 .perfil:hover {
-    opacity: 1;
-}
-  
-  @media screen and (max-width: 768px) {
-    .perfil-info {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-  
-    .galeria {
-      grid-template-columns: 1fr;
-    }
-  
-    .perfil-img {
-      margin-bottom: 15px;
-    }
-  
-  /* NAVEGACIÓ*/
-
-  .nave{
-    background: #591662;
-    width: 100%;
-    height: 65px;
-    position: fixed;
-    justify-content: center;
-    display: flex;
+  opacity: 1;
 }
 
-.home {
-    width: 40px;
-    height:40px;
-    margin: 14px 20px 0px 20px;
-}
-
-.exposi {
-    width: 40px;
-    height: 40px;
-    margin: 14px 20px 0px 20px;
-}
-
-.subir {
-    width: 55px;
-    height:55px;
-    margin: 6px 20px 0px 20px;
-}
-
-.subasta {
-    width: 40px;
-    height:40px;
-    margin: 14px 20px 0px 20px;
-}
-
-.perfil {
-    width: 40px;
-    height:40px;
-    margin: 14px 20px 0px 20px;
-}
-
+@media screen and (max-width: 768px) {
+  .perfil-info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
+
+  .galeria {
+    grid-template-columns: 1fr;
+  }
+
+  .perfil-img {
+    margin-bottom: 15px;
+  }
+
+  /* No modifico nada de .nave ni hijos */
+  
+  .info-container {
+    font-size: 1rem;
+    height: 80px;
+  }
+    /* NAVEGACIÓ*/
+    .nave{
+        background: #591662;
+        width: 100%;
+        height: 65px;
+        position: fixed;
+        justify-content: center;
+        display: flex;
+    }
+
+    .home {
+        width: 40px;
+        height:40px;
+        margin: 14px 20px 0px 20px;
+    }
+    
+    .exposi {
+        width: 40px;
+        height: 40px;
+        margin: 14px 20px 0px 20px;
+    }
+    
+    .subir {
+        width: 55px;
+        height:55px;
+        margin: 6px 20px 0px 20px;
+    }
+    
+    .subasta {
+        width: 40px;
+        height:40px;
+        margin: 14px 20px 0px 20px;
+    }
+    
+    .perfil {
+        width: 40px;
+        height:40px;
+        margin: 14px 20px 0px 20px;
+    }
+}

@@ -1,123 +1,124 @@
 <!DOCTYPE html>
-<html lang="ca">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Obres</title>
-  <link rel="stylesheet" href="obras.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Seleccionar Obras</title>
+  <link rel="stylesheet" href="obras.css" />
 </head>
 <body>
-  <div class="container">
-    <!-- Agrupa checkbox con texto + botón -->
-    <div class="filtro-box">
-      <div class="checkbox-text">
-        <input type="checkbox" id="seleccionar">
-        <label for="seleccionar">Selecciona l'obra</label>
+
+  <main class="container">
+    <!-- Barra superior -->
+    <div class="top-bar">
+      <div class="seleccionar-toggle">
+        <input type="checkbox" id="modoSeleccion" />
+        <label for="modoSeleccion">Seleccionar</label>
       </div>
-      <button class="filtro" id="filtrarBtn">FILTRAR</button>
+
+      <button class="filtros-toggle" id="abrirFiltros">Filtrar</button>
     </div>
 
-    <!-- Filtros, ocultos por defecto -->
-    <div id="filtros" class="filtros">
-      <p>Filtrar per:</p>
-      <button class="filtroBtn" id="autorBtn">Autor <span class="flecha">▼</span></button>
-      <div id="autorDropdown" class="dropdown" style="display: none;">
-        <select>
-          <option value="autor1">Autor 1</option>
-          <option value="autor2">Autor 2</option>
-          <option value="autor3">Autor 3</option>
-          <option value="autor4">Autor 4</option>
-        </select>
-      </div>
+    <!-- Panel de filtros -->
+    <div class="filtros-panel" id="filtrosPanel">
+      <label for="autor">Autor</label>
+      <input type="text" id="autor" placeholder="Nombre del autor" />
 
-      <button class="filtroBtn" id="especialitatBtn">Especialitat <span class="flecha">▼</span></button>
-      <div id="especialitatDropdown" class="dropdown" style="display: none;">
-        <select>
-          <option value="pintura">Pintura</option>
-          <option value="escultura">Escultura</option>
-          <option value="fotografia">Fotografia</option>
-          <option value="digital">Art Digital</option>
-        </select>
-      </div>
+      <label for="especialidad">Especialidad</label>
+      <select id="especialidad">
+        <option value="">Todas</option>
+        <option value="pintura">Pintura</option>
+        <option value="escultura">Escultura</option>
+        <option value="fotografia">Fotografía</option>
+      </select>
 
-      <button class="filtroBtn" id="dataBtn">Data <span class="flecha">▼</span></button>
-      <div id="dataDropdown" class="dropdown" style="display: none;">
-        <input type="date">
-      </div>
+      <label for="fecha">Fecha</label>
+      <input type="date" id="fecha" />
     </div>
 
-    <div class="obras">
-      <!-- 12 cuadrados con los círculos añadidos -->
-      <div class="cuadrados">
-        <div class="circle"></div>
+    <!-- Grid de obras (2 columnas, 10 obras por columna) -->
+    <section class="obras-grid" id="obrasGrid">
+      <div class="obra" data-autor="Autor 1" data-especialidad="pintura" data-fecha="2021-01-15">
+        <span class="selector-circulo"></span>
+        <img src="../../interface/dentroexpoo/exposicio1/img2.jpg" alt="Obra 1" />
+        <h4>Obra 1</h4>
       </div>
-      <div class="cuadrados">
-        <div class="circle"></div>
+      <div class="obra" data-autor="Autor 2" data-especialidad="escultura" data-fecha="2020-06-10">
+        <span class="selector-circulo"></span>
+        <img src="../../interface/dentroexpoo/exposicio1/img1.jpg" alt="Obra 2" />
+        <h4>Obra 2</h4>
       </div>
-      <div class="cuadrados">
-        <div class="circle"></div>
+      <div class="obra" data-autor="Autor 3" data-especialidad="fotografia" data-fecha="2019-03-22">
+        <span class="selector-circulo"></span>
+        <img src="../../interface/dentroexpoo/exposicio1/img3.jpg" alt="Obra 3" />
+        <h4>Obra 3</h4>
       </div>
-      <div class="cuadrados">
-        <div class="circle"></div>
+      <div class="obra" data-autor="Autor 4" data-especialidad="pintura" data-fecha="2022-11-05">
+        <span class="selector-circulo"></span>
+        <img src="../../interface/imageneshome/obra3.jpg" alt="Obra 4" />
+        <h4>Obra 4</h4>
       </div>
-      <div class="cuadrados">
-        <div class="circle"></div>
+      <div class="obra" data-autor="Autor 5" data-especialidad="escultura" data-fecha="2018-07-19">
+        <span class="selector-circulo"></span>
+        <img src="../../interface/imageneshome/obra2.jpg" alt="Obra 5" />
+        <h4>Obra 5</h4>
       </div>
-      <div class="cuadrados">
-        <div class="circle"></div>
+      <div class="obra" data-autor="Autor 6" data-especialidad="fotografia" data-fecha="2017-02-14">
+        <span class="selector-circulo"></span>
+        <img src="../../interface/imageneshome/obra4.jpg" alt="Obra 6" />
+        <h4>Obra 6</h4>
       </div>
-      <div class="cuadrados">
-        <div class="circle"></div>
+      <div class="obra" data-autor="Autor 7" data-especialidad="pintura" data-fecha="2023-04-12">
+        <span class="selector-circulo"></span>
+        <img src="../../interface/imageneshome/obra6.jpg" alt="Obra 7" />
+        <h4>Obra 7</h4>
       </div>
-      <div class="cuadrados">
-        <div class="circle"></div>
+      <div class="obra" data-autor="Autor 8" data-especialidad="escultura" data-fecha="2021-09-09">
+        <span class="selector-circulo"></span>
+        <img src="../../interface/dentroexpoo/imgexpos/expo6.jpeg" alt="Obra 8" />
+        <h4>Obra 8</h4>
       </div>
-      <div class="cuadrados">
-        <div class="circle"></div>
+      <div class="obra" data-autor="Autor 9" data-especialidad="fotografia" data-fecha="2020-05-30">
+        <span class="selector-circulo"></span>
+        <img src="../../interface/imageneshome/obra7.jpg" alt="Obra 9" />
+        <h4>Obra 9</h4>
       </div>
-      <div class="cuadrados">
-        <div class="circle"></div>
+      <div class="obra" data-autor="Autor 10" data-especialidad="pintura" data-fecha="2019-12-01">
+        <span class="selector-circulo"></span>
+        <img src="../../interface/imageneshome/obra8.jpg" alt="Obra 10" />
+        <h4>Obra 10</h4>
       </div>
-      <div class="cuadrados">
-        <div class="circle"></div>
-      </div>
-      <div class="cuadrados">
-        <div class="circle"></div>
-      </div>
-      <div class="cuadrados">
-        <div class="circle"></div>
-      </div>
-      <div class="cuadrados">
-        <div class="circle"></div>
-      </div>
-      <div class="cuadrados">
-        <div class="circle"></div>
-      </div>
-      <div class="cuadrados">
-        <div class="circle"></div>
-      </div>
-      <div class="cuadrados">
-        <div class="circle"></div>
-      </div>
-      <div class="cuadrados">
-        <div class="circle"></div>
-      </div>
-    </div>
 
-    <div class="botones">
-      <button>Vista prèvia</button>
-      <button>Guardar</button>
+      <!-- Puedes añadir las otras 10 obras igual aquí -->
+      <!-- Repite la estructura -->
+
+    </section>
+
+    <!-- Botones finales -->
+    <div class="botones-finales">
+      <button id="vistaPrevia">Vista Previa</button>
+      <button id="confirmar" onclick="myFunction()">Confirmar</button>
+    </div>
+  </main>
+
+  <!-- Modal vista previa -->
+  <div id="modalVistaPrevia" class="modal">
+    <div class="modal-content">
+      <span id="cerrarModal" class="cerrar">&times;</span>
+      <h2>Vista Previa de la Expo</h2>
+      <div id="expoPreview" class="expo-preview"></div>
     </div>
   </div>
 
-  <!-- Barra de navegación -->
+ <!-- Barra de navegación fija abajo -->
   <div class="nave">
-    <a href="../home.html" class="home"></a>
-    <a href="../expos/principal.html" class="exposi"></a>
-    <a href="../subir/subir.html" class="subir"></a>
-    <a href="./subasta.html" class="subasta"></a>
-    <a href="../perfil/perfil1.html" class="perfil"></a>
+    <a href="../homempresa/homempresa.html" class="home"></a>
+    <a href="../exposiciones/expoempresa.html" class="exposi"></a>
+    <a href="../subirempresa/subirempresa.html" class="subir"></a>
+    <a href="../subasta/subasta.html" class="subasta"></a>
+    <a href="../perfilempresa/perfilempresa.html" class="perfil"></a>
   </div>
-
+  
   <script src="script.js"></script>
 </body>
 </html>

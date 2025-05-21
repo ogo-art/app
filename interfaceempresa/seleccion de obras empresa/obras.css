@@ -1,197 +1,317 @@
-/* === GENERAL === */
-html, body {
-  height: 100%;
+:root {
+  --color-primary: #591662;
+  --color-secondary: #5dbfbd;
+  --color-bg: #fafafa;
+  --color-text: #222;
+  --color-border: #ddd;
+  --border-radius: 20px;
+  --transition-speed: 0.3s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  font-family: sans-serif;
-  background: #eaeaea;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  min-height: 100vh;
-}
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  line-height: 1.5;
+} 
 
 .container {
-  background: white;
-  padding: 20px; /* 20px */
-  max-width: 960px; /* 960px */
-  width: 100%;
-  min-height: calc(100vh - 80px); /* calc(100vh - 80px) */
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 120px; /* 120px */
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 1.5rem 1.5rem 12rem;
+  position: relative;
 }
 
-/* === FILTRO === */
-.filtro-box {
+.top-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  margin-bottom: 15px; /* 15px */
-  padding: 0 10px; /* 0 10px */
-  flex-wrap: wrap;
-  gap: 10px; /* 10px */
+  background-color: var(--color-bg);
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--color-border);
+  /* position: sticky; */
+  /* top: 0; */
+  z-index: 20;
 }
 
-.checkbox-text {
+
+.seleccionar-toggle {
   display: flex;
   align-items: center;
-  font-size: 1rem; /* 16px */
-  font-weight: bold;
-  gap: 10px; /* 10px */
-  white-space: nowrap;
+  gap: 0.6rem;
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: var(--color-primary);
+  user-select: none;
 }
 
-input[type="checkbox"] {
-  transform: scale(1.5);
+.seleccionar-toggle input[type="checkbox"] {
+  width: 24px;
+  height: 24px;
   cursor: pointer;
+  accent-color: var(--color-secondary);
+  border-radius: 6px;
+  transition: box-shadow var(--transition-speed);
 }
 
-.filtro {
-  background: #52c1c1;
-  color: white;
+.seleccionar-toggle input[type="checkbox"]:focus-visible {
+  outline-offset: 3px;
+  box-shadow: 0 0 5px var(--color-secondary);
+}
+
+.filtros-toggle {
+  background-color: var(--color-primary);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 0.5rem 1.4rem;
+  border-radius: var(--border-radius);
   border: none;
-  padding: 12px 20px; /* 12px 20px */
-  border-radius: 6px; /* 6px */
-  font-weight: bold;
   cursor: pointer;
-  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(89, 22, 98, 0.25);
+  transition: background-color var(--transition-speed), box-shadow var(--transition-speed);
+  font-feature-settings: "liga" on;
 }
 
-/* === FILTROS === */
-.filtros {
-  display: none; /* Inicialmente oculto */
-  margin-top: 20px; /* 20px */
-  width: 100%;
-  padding: 10px; /* 10px */
-  background-color: #f9f9f9;
-  border-radius: 6px; /* 6px */
+.filtros-toggle:hover,
+.filtros-toggle:focus-visible {
+  background-color: #440f4b;
+  box-shadow: 0 6px 20px rgba(68, 15, 75, 0.4);
+  outline: none;
 }
 
-.filtroBtn {
-  display: block;
-  padding: 10px; /* 10px */
-  margin: 5px 0; /* 5px 0 */
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
-  text-align: left;
-  cursor: pointer;
-  font-size: 1rem; /* 16px */
-  width: 100%;
+.filtros-panel {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 3.8rem;
+  right: 1.5rem;
+  width: 280px;
+  background: #fff;
+  border-radius: var(--border-radius);
+  padding: 1rem 1.25rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  z-index: 40;
 }
 
-.flecha {
-  font-size: 0.75rem; /* 12px */
-  margin-left: 5px; /* 5px */
+.filtros-panel.active {
+  display: flex;
 }
 
-/* === CUADRADOS DE OBRA === */
-.obras {
+.filtros-panel label {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--color-primary);
+  margin-top: 0.8rem;
+  user-select: none;
+}
+
+.filtros-panel input,
+.filtros-panel select {
+  margin-top: 0.3rem;
+  padding: 0.6rem 0.8rem;
+  font-size: 1rem;
+  border: 1.5px solid var(--color-secondary);
+  border-radius: 8px;
+  transition: border-color var(--transition-speed);
+  font-family: inherit;
+}
+
+.filtros-panel input:focus,
+.filtros-panel select:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 6px var(--color-primary);
+}
+
+/* Obras grid */
+.obras-grid {
+  margin-top: 1.5rem;
+  padding-bottom: 2rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 10px; /* 10px */
-  width: 100%;
-  justify-items: center;
-  margin-bottom: 20px; /* 20px */
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 3rem 3rem;
 }
 
-.cuadrados {
-  background-color: #1e3a8a;
-  width: 100%;
-  max-width: 290px; /* 290px */
-  height: 200px; /* 200px */
-  border-radius: 5px; /* 5px */
+.obra {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0 6px 20px rgba(89, 22, 98, 0.25);
   position: relative;
-  overflow: hidden;
+  cursor: pointer;
+  min-height: 240px;
+  transition: box-shadow var(--transition-speed);
 }
 
-.circle {
-  width: 20px; /* 20px */
-  height: 20px; /* 20px */
+.obra:hover {
+  box-shadow: 0 10px 30px rgba(89, 22, 98, 0.4);
+}
+
+.selector-circulo {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  width: 28px;
+  height: 28px;
+  border: 2.5px solid var(--color-primary);
   border-radius: 50%;
   background-color: transparent;
-  position: absolute;
-  bottom: 10px; /* 10px */
-  right: 10px; /* 10px */
-  border: 2px solid red;
-  cursor: pointer;
-  display: none;
+  opacity: 0;
+  transition: background-color var(--transition-speed), opacity var(--transition-speed);
+  z-index: 10;
 }
 
-.circle.selected {
-  background-color: red;
+.obra.seleccionada .selector-circulo {
+  background-color: var(--color-primary);
+  opacity: 1;
 }
 
-/* === BOTONES FINALES === */
-.botones {
-  display: flex;
-  justify-content: center;
-  gap: 20px; /* 20px */
-  margin-top: 20px; /* 20px */
+.obra img {
   width: 100%;
-  flex-wrap: wrap;
+  height: 180px;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+  pointer-events: none;
+  user-select: none;
 }
 
-.botones button {
-  background: #52c1c1;
+.obra h4 {
+  margin: 1rem 0 0 0;
+  font-weight: 700;
+  text-align: center;
+  font-size: 1rem;
+  user-select: none;
+}
+
+/* Botones finales */
+.botones-finales {
+  position: relative; 
+  margin-top: 1rem; 
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+  z-index: 10; /* menor que .nave */
+}
+
+.botones-finales button {
+  flex: 1;
+  background-color: var(--color-primary);
   color: white;
+  font-weight: 700;
+  font-size: 1.125rem;
   border: none;
-  padding: 15px 30px; /* 15px 30px */
-  border-radius: 6px; /* 6px */
+  border-radius: var(--border-radius);
+  padding: 0.9rem 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(89, 22, 98, 0.4);
+  transition: background-color var(--transition-speed), box-shadow var(--transition-speed);
+  font-feature-settings: "liga" on;
+}
+
+.botones-finales button:hover,
+.botones-finales button:focus-visible {
+  background-color: #440f4b;
+  box-shadow: 0 6px 20px rgba(68, 15, 75, 0.6);
+  outline: none;
+}
+
+/* Modal vista previa */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  width: 90%;
+  max-width: 480px;
+  box-shadow: 0 10px 30px rgba(89, 22, 98, 0.7);
+  position: relative;
+}
+
+.cerrar {
+  position: absolute;
+  top: 14px;
+  right: 20px;
+  color: #aaa;
+  font-size: 28px;
   font-weight: bold;
   cursor: pointer;
-  font-size: 1rem; /* 16px */
-  min-width: 180px; /* 180px */
 }
 
-/* === BARRA DE NAVEGACIÓN === */
+.cerrar:hover,
+.cerrar:focus {
+  color: var(--color-primary);
+  outline: none;
+}
+
+.expo-preview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  justify-content: center;
+}
+
+.expo-preview img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 15px rgba(89, 22, 98, 0.4);
+}
+
+/* NAV */
+
 .nave {
   background: #591662;
   width: 100%;
-  max-width: 960px; /* 960px */
-  height: 80px; /* 80px */
+  max-width: 960px;
+  height: 80px;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   position: fixed;
-  z-index: 1000;
+  justify-content: center;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0 10px; /* 0 10px */
+  z-index: 100;
 }
 
-.nav-icon {
-  display: block;
-  width: 40px; /* 40px */
-  height: 40px; /* 40px */
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  opacity: 0.5;
-  transition: opacity 0.2s;
-}
-
-.nav-icon:hover {
-  opacity: 1;
-}
+/* Aquí conservamos las posiciones y márgenes exactos para cada botón */
 
 .home {
   opacity: 0.5;
   background: transparent;
-  width: 40px; /* 40px */
-  height: 40px; /* 40px */
-  margin: 20px 5%; /* 20px 5% */
+  width: 40px;
+  height: 40px;
+  margin: 20px 5%;
   float: left;
   background-image: url(../../img/home.png);
-  background-size: contain;
+  background-size: contain;  
   background-repeat: no-repeat;
-  background-position: 0px 0px;
+  background-position: 0 0;
 }
 
 .home:hover {
@@ -201,14 +321,14 @@ input[type="checkbox"] {
 .exposi {
   opacity: 0.5;
   background: transparent;
-  width: 40px; /* 40px */
-  height: 40px; /* 40px */
-  margin: 20px 5%; /* 20px 5% */
+  width: 40px;
+  height: 40px;
+  margin: 20px 5%;
   float: left;
   background-image: url(../../img/expo.png);
-  background-size: contain;
+  background-size: contain;  
   background-repeat: no-repeat;
-  background-position: 0px 0px;
+  background-position: 0 0;
 }
 
 .exposi:hover {
@@ -216,16 +336,16 @@ input[type="checkbox"] {
 }
 
 .subir {
-  opacity: 0.5;
+  opacity: 1;
   background: transparent;
-  width: 70px; /* 70px */
-  height: 70px; /* 70px */
-  margin: 5px 50px; /* 5px 50px */
+  width: 70px;
+  height: 70px;
+  margin: 5px 50px;
   float: left;
   background-image: url(../../img/subir.png);
-  background-size: contain;
+  background-size: contain;  
   background-repeat: no-repeat;
-  background-position: 0px 0px;
+  background-position: 0 0;
 }
 
 .subir:hover {
@@ -233,98 +353,88 @@ input[type="checkbox"] {
 }
 
 .subasta {
-  opacity: 1;
+  opacity: 0.5;
   background: transparent;
-  width: 40px; /* 40px */
-  height: 40px; /* 40px */
-  margin: 20px 5%; /* 20px 5% */
+  width: 40px;
+  height: 40px;
+  margin: 20px 5%;
   float: left;
   background-image: url(../../img/subasta.png);
-  background-size: contain;
+  background-size: contain;  
   background-repeat: no-repeat;
-  background-position: 3px 0px;
+  background-position: 3px 0;
+}
+
+.subasta:hover {
+  opacity: 1;
 }
 
 .perfil {
   opacity: 0.5;
-  background: transparent;
-  width: 40px; /* 40px */
-  height: 40px; /* 40px */
-  margin: 20px 5%; /* 20px 5% */
+  background: blue;
+  width: 40px;
+  height: 40px;
+  margin: 20px 5%;
+  border-radius: 8px;
   float: left;
-  background-image: url(../../img/perfil.png);
-  background-size: contain;
+  background-image: url(../../interface/dentroexpoo/imgexpos/logo1.jpg);
+  background-size: 120%;  
   background-repeat: no-repeat;
-  background-position: 0px 0px;
+  background-position: -4px -4px;
 }
 
 .perfil:hover {
   opacity: 1;
 }
 
-/* === RESPONSIVE === */
-@media screen and (max-width: 768px) {
-  .filtro-box {
-    flex-direction: column;
-    align-items: flex-start;
+/* MEDIA QUERY CON CAMBIO DE BOTONES */
+
+/* RESPONSIVE DESIGN PARA 440x932 */
+
+@media screen and (max-width: 440px) and (max-height: 932px) {
+  main.formulario {
+    padding-bottom: 100px; /* espacio para la barra fija */
   }
 
-  .botones {
-    flex-direction: column;
-    gap: 10px; /* 10px */
-  }
+  /* NAVEGACIÓ*/
 
-  .nave {
-    height: auto;
-    padding: 10px 0; /* 10px 0 */
-    flex-wrap: wrap;
-  }
+    .nave{
+        background: #591662;
+        width: 100%;
+        height: 65px;
+        position: fixed;
+        justify-content: center;
+        display: flex;
+    }
 
-  .nav-icon {
-    width: 35px; /* 35px */
-    height: 35px; /* 35px */
-    margin: 10px; /* 10px */
-  }
+    .home {
+        width: 40px;
+        height:40px;
+        margin: 14px 20px 0px 20px;
+    }
+    
+    .exposi {
+        width: 40px;
+        height: 40px;
+        margin: 14px 20px 0px 20px;
+    }
+    
+    .subir {
+        width: 55px;
+        height:55px;
+        margin: 6px 20px 0px 20px;
+    }
+    
+    .subasta {
+        width: 40px;
+        height:40px;
+        margin: 14px 20px 0px 20px;
+    }
+    
+    .perfil {
+        width: 40px;
+        height:40px;
+        margin: 14px 20px 0px 20px;
+    }
 
-  .subir {
-    width: 60px; /* 60px */
-    height: 60px; /* 60px */
-  }
-
-  /* Cambiar a dos columnas */
-  .obras {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media screen and (max-width: 440px) {
-  .filtro {
-    width: 100%;
-    text-align: center;
-  }
-
-  .botones button {
-    width: 100%;
-  }
-
-  .nav-icon {
-    width: 30px; /* 30px */
-    height: 30px; /* 30px */
-  }
-
-  .subir {
-    width: 50px; /* 50px */
-    height: 50px; /* 50px */
-  }
-
-  /* Mantener dos columnas en pantallas móviles */
-  .obras {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  /* Mantener la barra de navegación fija en la parte inferior */
-  .nave {
-    height: 60px; /* 60px */
-    padding: 10px 0; /* 10px 0 */
-  }
 }

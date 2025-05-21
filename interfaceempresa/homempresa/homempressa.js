@@ -8,10 +8,10 @@ document.querySelectorAll('.guardar').forEach(item => {
 
         if (currentImage.includes('guardar.png')) {
             console.log('Activando la imagen de guardar2');
-            item.style.backgroundImage = "url('../../img/guardar2.png')";
+            item.style.backgroundImage = "url('../img/guardar2.png')";
         } else {
             console.log('Desactivando la imagen a guardar');
-            item.style.backgroundImage = "url('../../img/guardar.png')";
+            item.style.backgroundImage = "url('../img/guardar.png')";
         }
     });
 });

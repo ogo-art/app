@@ -82,7 +82,7 @@ h6 {
     height: 350px;
     background: blue;
     margin:  0 auto;
-    background-image: url(../../interface/dentroexpoo/imgexpos/expo4.jpg);
+    background-image: url(dentroexpoo/imgexpos/expo4.jpg);
     background-size: 960px;  
     background-repeat: no-repeat;
     background-position: 0px 0px;
@@ -156,7 +156,7 @@ h2 {
     left: 10px;
     width: 15px;
     height: 15px;
-    background-image: url(../../img/desplegar.png);
+    background-image: url(../img/desplegar.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -204,35 +204,35 @@ h2 {
 }
 
 .expo1 {
-    background-image: url('../../interface/imageneshome/obra1.jpg');
+    background-image: url('imageneshome/obra1.jpg');
     background-repeat: no-repeat;
     background-size: 140%;
 }
 
 .expo2 {
-    background-image: url('../../interface/imageneshome/obra2.jpg');
+    background-image: url('imageneshome/obra2.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
 }
 
 .expo3 {
-    background-image: url('../../interface/imageneshome/obra3.jpg');
+    background-image: url('imageneshome/obra3.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
 }
 .expo4 {
-    background-image: url('../../interface/imageneshome/obra4.jpg');
+    background-image: url('imageneshome/obra4.jpg');
     background-repeat: no-repeat;
     background-size: 190%;
 }
 .expo5 {
-    background-image: url('../../interface/imageneshome/obra5.jpg');
+    background-image: url('../../imageneshome/obra5.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
 }
 
 .expo6 {
-    background-image: url('../../interface/imageneshome/obra6.jpg');
+    background-image: url('imageneshome/obra6.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -259,7 +259,7 @@ h2 {
     height: 40px;
     left: 410px;
     top: 10px;
-    background-image: url(../../img/guardar.png);
+    background-image: url(../img/guardar.png);
     background-size: contain;  
     background-repeat: no-repeat;
     background-position: 7px 0px;
@@ -444,7 +444,7 @@ h2 {
         height: 250px;
         background: blue;
         border-radius: 0px;
-        background-image: url(dentroexpoo/imgexpos/expo4.jpg);
+        background-image: url(../../interface/dentroexpoo/exposicio1/img4.jpg);
         background-size: 100%;  
         background-repeat: no-repeat;
         background-position: 0px 0px;
@@ -489,7 +489,7 @@ h2 {
     }
 
     .container {
-        background: red;
+        background: transparent;
         width: 100%;
         max-width: 460px;
         height: fit-content;
@@ -500,7 +500,7 @@ h2 {
     }
     
     .expo {
-        background: grey;
+        background: transparent;
         width: 100%;
         height: 420px;
         float: left;
@@ -508,6 +508,56 @@ h2 {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+    }
+
+    .expo1 {
+        background-image: url('../../interface/dentroexpoo/imgexpos/expo1.jpg');
+        background-repeat: no-repeat;
+        background-size: 140%;
+    }
+    
+    .expo2 {
+        background-image: url('../../interface/dentroexpoo/imgexpos/expo2.jpeg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    
+    .expo3 {
+        background-image: url('../../interface/dentroexpoo/imgexpos/expo3.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    .expo4 {
+        background-image: url('../../interface/dentroexpoo/imgexpos/expo4.jpg');
+        background-repeat: no-repeat;
+        background-size: 190%;
+    }
+    .expo5 {
+        background-image: url('../../interface/dentroexpoo/imgexpos/expo5.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    
+    .expo6 {
+        background-image: url('../../interface/dentroexpoo/imgexpos/expo6.jpeg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    
+    .expo7 {
+        background-image: url('../../interface/dentroexpoo/imgexpos/expo1.jpg');
+    }
+    
+    .expo8 {
+        background-image: url('../../interface/dentroexpoo/imgexpos/expo1.jpg');
+    }
+    
+    .expo9 {
+        background-image: url('../../interface/dentroexpoo/imgexpos/expo1.jpg');
+    }
+    
+    .expo10 {
+        background-image: url('../../interface/dentroexpoo/imgexpos/expo1.jpg');
     }
 
     .guardar {

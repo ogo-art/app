@@ -9,51 +9,49 @@ html, body {
 /* ESTILO GENERAL */
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: #fefaf6;
+  background: white;
   color: #333;
   line-height: 1.5;
 }
 
 /* CABECERA */
 header {
-  background-color: #2c3e50;
-  color: white;
-  padding: 2rem 1rem;
-  text-align: center;
   position: relative;
-}
-
-header h1 {
-  font-size: 1.5rem;
-  margin-top: 1rem;
-}
-
-/* PORTADA DE LA EXPO */
-.portada {
   width: 100%;
-  height: 250px;
-  background-color: #e0e0e0;
+  height: 300px;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* Contenedor de la portada */
+#portada {
+  width: 100%;
+  height: 100%;
   position: relative;
   cursor: pointer;
-  border-radius: 8px;
-  background-size: cover;
-  background-position: center;
 }
 
-#portadaInput {
-  display: none; /* Ocultar input de archivo */
+/* Imagen dentro de portada */
+#portada img.titulo-imagen {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
+/* Menú de tres puntos */
 .menu {
   position: absolute;
   top: 10px;
   right: 10px;
-  display: none;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 5px;
-  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 5px 10px;
+  border-radius: 5px;
   color: white;
   cursor: pointer;
+  z-index: 10;
+  user-select: none;
 }
 
 .menu span {
@@ -63,20 +61,26 @@ header h1 {
 .menu-options {
   display: none;
   position: absolute;
-  top: 30px;
+  top: 35px;
   right: 0;
   background-color: white;
   padding: 5px;
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 20;
+  min-width: 130px;
 }
 
 .menu-options button {
   background: transparent;
   border: none;
   cursor: pointer;
-  padding: 5px;
-  font-size: 1rem;
+  padding: 5px 10px;
+  font-size: 0.95rem;
+  color: #333;
+  width: 100%;
+  text-align: left;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .menu-options button:hover {
@@ -84,18 +88,13 @@ header h1 {
   color: white;
 }
 
-.portada:hover .menu {
-  display: block;
-}
-
-/* FORMULARIO DE CARGA */
+/* FORMULARIO */
 .formulario {
   padding: 1rem;
   width: 100%;
   box-sizing: border-box;
 }
 
-/* CAMPOS DE TEXTO Y ARCHIVOS */
 input[type="text"],
 textarea,
 input[type="file"],
@@ -106,6 +105,7 @@ input[type="date"] {
   border-radius: 8px;
   width: 100%;
   box-sizing: border-box;
+  margin-bottom: 1.2rem; /* <-- aquí aumentamos la distancia entre campos */
 }
 
 /* SECCIÓN DE VISTA PREVIA */
@@ -114,7 +114,7 @@ input[type="date"] {
   padding: 1rem;
   background: white;
   border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   text-align: center;
   display: none;
   width: 100%;
@@ -137,13 +137,18 @@ input[type="date"] {
   color: #555;
 }
 
-/* BOTÓN PARA SELECCIONAR OBRAS */
+/* BOTONES DE OPCIONES EXTRA */
 .extra-options {
   margin-top: 2rem;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: nowrap;
 }
 
-.extra-options button {
+.extra-options a.boton-obras,
+.extra-options button#confirmarExpo {
   background-color: #3498db;
   font-size: 1rem;
   padding: 0.7rem 1.5rem;
@@ -152,162 +157,170 @@ input[type="date"] {
   color: white;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  width: 200px;
+  text-align: center;
 }
 
-.extra-options button:hover {
+.extra-options a.boton-obras:hover,
+.extra-options button#confirmarExpo:hover {
   background-color: #2980b9;
 }
 
-  
-  .nave{
-    background: #591662;
-    width: 100%;
-    max-width: 960px;
-    height: 80px;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    position: fixed;
-    justify-content: center;
-    display: flex;
-}
-
-.home {
-    opacity: 1;
-    background: transparent;
-    width: 40px;
-    height:40px;
-    margin: 20px 5%;
-    float: left;
-    background-image: url(../../img/home.png);
-    background-size: contain;  
-    background-repeat: no-repeat;
-    background-position: 0px 0px;
-}
-
-.exposi {
-    opacity: 0.5;
-    background: transparent;
-    width: 40px;
-    height: 40px;
-    margin: 20px 5%;
-    float: left;
-    background-image: url(../../img/expo.png);
-    background-size: contain;  
-    background-repeat: no-repeat;
-    background-position: 0px 0px;
-}
-
-.exposi:hover {
-    opacity: 1;
-}
-
-.subir {
-    opacity: 0.5;
-    background: transparent;
-    width: 70px;
-    height:70px;
-    margin: 5px 50px;
-    float: left;
-    background-image: url(../../img/subir.png);
-    background-size: contain;  
-    background-repeat: no-repeat;
-    background-position: 0px 0px;
-}
-
-.subir:hover {
-    opacity: 1;
-}
-
-.subasta {
-    opacity: 0.5;
-    background: transparent;
-    width: 40px;
-    height:40px;
-    margin: 20px 5%;
-    float: left;
-    background-image: url(../../img/subasta.png);
-    background-size: contain;  
-    background-repeat: no-repeat;
-    background-position: 3px 0px;
-}
-
-.subasta:hover {
-    opacity: 1;
-}
-
-.perfil {
-    opacity: 0.5;
-    background: blue;
-    width: 40px;
-    height:40px;
-    margin: 20px 5%;
-    border-radius: 8px;
-    float: left;
-    background-image: url(../../img/perfilapp.jpg);
-    background-size: 120%;  
-    background-repeat: no-repeat;
-    background-position: -4px -4px;
-}
-
-.perfil:hover {
-    opacity: 1;
-} 
-
-@media screen and (max-width: 768px) {
-  .perfil-info {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .galeria {
-    grid-template-columns: 1fr;
-  }
-
-  .perfil-img {
-    margin-bottom: 15px;
-  }
-
-/* NAVEGACIÓ*/
-
-.nave{
+/* NAV */
+.nave {
   background: #591662;
   width: 100%;
-  height: 65px;
+  max-width: 960px;
+  height: 80px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
   position: fixed;
   justify-content: center;
   display: flex;
 }
 
+/* Aquí conservamos las posiciones y márgenes exactos para cada botón */
+
 .home {
+  opacity: 0.5;
+  background: transparent;
   width: 40px;
-  height:40px;
-  margin: 14px 20px 0px 20px;
+  height: 40px;
+  margin: 20px 5%;
+  float: left;
+  background-image: url(../../img/home.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.home:hover {
+  opacity: 1;
 }
 
 .exposi {
+  opacity: 0.5;
+  background: transparent;
   width: 40px;
   height: 40px;
-  margin: 14px 20px 0px 20px;
+  margin: 20px 5%;
+  float: left;
+  background-image: url(../../img/expo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.exposi:hover {
+  opacity: 1;
 }
 
 .subir {
-  width: 55px;
-  height:55px;
-  margin: 6px 20px 0px 20px;
+  opacity: 1;
+  background: transparent;
+  width: 70px;
+  height: 70px;
+  margin: 5px 50px;
+  float: left;
+  background-image: url(../../img/subir.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.subir:hover {
+  opacity: 1;
 }
 
 .subasta {
+  opacity: 0.5;
+  background: transparent;
   width: 40px;
-  height:40px;
-  margin: 14px 20px 0px 20px;
+  height: 40px;
+  margin: 20px 5%;
+  float: left;
+  background-image: url(../../img/subasta.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 3px 0;
+}
+
+.subasta:hover {
+  opacity: 1;
 }
 
 .perfil {
+  opacity: 0.5;
+  background: blue;
   width: 40px;
-  height:40px;
-  margin: 14px 20px 0px 20px;
+  height: 40px;
+  margin: 20px 5%;
+  border-radius: 8px;
+  float: left;
+  background-image: url(../../interface/dentroexpoo/imgexpos/logo1.jpg);
+  background-size: 120%;
+  background-repeat: no-repeat;
+  background-position: -4px -4px;
 }
 
+.perfil:hover {
+  opacity: 1;
+}
+
+/* RESPONSIVE DESIGN PARA 440x932 */
+
+@media screen and (max-width: 440px) and (max-height: 932px) {
+  main.formulario {
+    padding-bottom: 100px; /* espacio para la barra fija */
+  }
+
+  /* NAVEGACIÓ*/
+
+  .nave {
+    background: #591662;
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    justify-content: center;
+    display: flex;
+  }
+
+  .home {
+    width: 40px;
+    height: 40px;
+    margin: 14px 20px 0px 20px;
+  }
+
+  .exposi {
+    width: 40px;
+    height: 40px;
+    margin: 14px 20px 0px 20px;
+  }
+
+  .subir {
+    width: 55px;
+    height: 55px;
+    margin: 6px 20px 0px 20px;
+  }
+
+  .subasta {
+    width: 40px;
+    height: 40px;
+    margin: 14px 20px 0px 20px;
+  }
+
+  .perfil {
+    width: 40px;
+    height: 40px;
+    margin: 14px 20px 0px 20px;
+  }
+
+  /* Ajuste botones extra-options para que no se corten */
+  .extra-options a.boton-obras,
+  .extra-options button#confirmarExpo {
+    width: 160px;
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
 }
